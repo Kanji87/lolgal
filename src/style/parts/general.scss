@@ -1,0 +1,51 @@
+
+// Variables
+$phone: 320px;
+$fablet: 580px;
+$tablet: 768px;
+$desktop: 980px;
+$large: 1080px;
+
+// Colors
+$black: #333333;
+$deep-grey: #666;
+$light-grey: #f0f0f0;
+$white: #ffffff;
+
+// Image paths
+$imgPath: "../img/";
+
+/* Mixins */
+@mixin respond-to($media) {
+  @if $media == phone {
+    @media only screen and (max-width: $fablet - 1) {
+      @content;
+    }
+  } @else if $media == fablet {
+    @media only screen and (max-width: $tablet - 1) {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media only screen and (max-width: $desktop - 1) {
+      @content;
+    }
+  } @else if $media == desktop {
+    @media only screen and (max-width: $large - 1) {
+      @content;
+    }
+  } @else if $media == large {
+    @media only screen and (max-width: $large) {
+      @content;
+    }
+  } @else if $media == retina {
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+      @content;
+    }
+  }
+}
