@@ -1,16 +1,90 @@
+/*
+* Variables
+*/
 
-// Variables
+// Dimensions
 $phone: 320px;
 $fablet: 580px;
 $tablet: 768px;
 $desktop: 980px;
-$large: 1080px;
+$large: 1280px;
+
+//Fonts
+$size-big: 72px;
+$size-1: 48px;
+$size-2: 36px;
+$size-3: 30px;
+$size-4: 24px;
+$size-5: 18px;
+$size-content: 14px;
 
 // Colors
 $black: #333333;
-$deep-grey: #666;
-$light-grey: #f0f0f0;
 $white: #ffffff;
+
+// BG colors
+$bg-header: #252222;
+$bg-green: #65ba99;
+$bg-red: #e2534b;
+$bg-footer: #3d3d48;
+
+// Button colors
+$button-green: #1abc9c;
+$button-green-hover: #1dcfac;
+$button-green-active: #0aaf8e;
+$button-green-disabled: #1abc9c;
+$button-green-shadow: #0e8c73;
+$button-green-hover-shadow: #0f9e82;
+$button-green-active-shadow: #07856c;
+$button-green-disabled-shadow: #0e8c73;
+
+$button-red: #e74c3c;
+$button-red-hover: #e75b4d;
+$button-red-active: #e03d2c;
+$button-red-disabled: #e75b4d;
+$button-red-shadow: #bf2c1d;
+$button-red-hover-shadow: #c33f31;
+$button-red-active-shadow: #b92111;
+$button-red-disabled-shadow: #c33f31;
+
+$button-blue: #3498db;
+$button-blue-hover: #46a2df;
+$button-blue-active: #1e89d0;
+$button-blue-disabled: #3498db;
+$button-blue-shadow: #1469a2;
+$button-blue-hover-shadow: #2976a9;
+$button-blue-active-shadow: #0a629d;
+$button-blue-disabled-shadow: #2976a9;
+
+$button-light-grey: #bdc3c7;
+$button-light-grey-hover: #ccd2d6;
+$button-light-grey-active: #afb5b8;
+$button-light-grey-disabled: #d3d9dd;
+$button-light-grey-shadow: #99a5ad;
+$button-light-grey-hover-shadow: #abb7bf;
+$button-light-grey-active-shadow: #8b969d;
+$button-light-grey-disabled-shadow: #bcc8d0;
+
+$button-deep-grey: #252222;
+$button-deep-grey-hover: #413b3b;
+$button-deep-grey-active: #1a1818;
+$button-deep-grey-shadow: #000;
+$button-deep-grey-hover-shadow: #292929;
+
+// Link colors
+$link-yellow: #f3fb74;
+$link-yellow-hover: #f3ff34;
+$link-yellow-active: #f5ff53;
+$link-yellow-disabled: #afb5b8;
+
+$link-black: #333;
+$link-black-hover: #585858;
+$link-black-active: #2b2b2b;
+
+// Social share colors
+$social-red: #e2534b;
+$social-red-hover: #eb6a63;
+$social-red-active: #de372d;
 
 // Image paths
 $imgPath: "../img/";
@@ -48,4 +122,27 @@ $imgPath: "../img/";
       @content;
     }
   }
+}
+
+html, body,
+h1, h2, h3, h4, h5, p,
+input, button,
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body {
+  font-size: 14px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
 }
