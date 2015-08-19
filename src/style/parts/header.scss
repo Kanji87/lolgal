@@ -11,14 +11,16 @@
 
 .header__block {
 //  display: table-cell;
-  vertical-align: middle;
-  line-height: 1.2;
+  height: 100px;
+  line-height: 100px;
   display: inline-block;
+  vertical-align: top;
 }
 
 .header__logo {
-  width: 40px;
-  line-height: 1;
+//  width: 40px;
+//  height: 38px;
+//  line-height: 1;
   color: $white;
   font-size: $size-1;
   font-weight: bold;
@@ -26,14 +28,15 @@
 }
 
 .header__menu-item {
+  width: 100px;
+  height: 30px;
   color: $white;
   font-size: $size-4;
-  width: 100px;
   text-align: center;
   vertical-align: middle;
   display: inline-block;
   margin: 0 10px;
-  line-height: 28px;
+  line-height: 35px;
 
   &:last-child {
     margin-right: 0;
@@ -56,4 +59,13 @@
 
 .header__menu-link--active {
   color: $bg-green;
+}
+
+.header__auth {
+  vertical-align: middle;
+  font-size: 24px;
+  line-height: 100px;
+  text-decoration: none;
+  float: right;
+  color: $link-yellow;
 }
