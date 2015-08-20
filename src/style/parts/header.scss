@@ -1,12 +1,7 @@
 .header {
   height: 100px;
-  background-color: $bg-header;
+  background-color: $bg-black;
   font-family: 'Bebas';
-}
-
-.header__wrapper {
-//  display: table;
-  line-height: 100px;
 }
 
 .header__block {
@@ -33,7 +28,6 @@
   color: $white;
   font-size: $size-4;
   text-align: center;
-  vertical-align: middle;
   display: inline-block;
   margin: 0 10px;
   line-height: 35px;
@@ -45,10 +39,14 @@
 
 .header__menu-link {
   text-decoration: none;
-  vertical-align: middle;
   font-weight: normal;
   font-size: 24px;
   color: $white;
+  -webkit-transition: font-size ease-in-out .1s;
+  -moz-transition: font-size ease-in-out .1s;
+  -ms-transition: font-size ease-in-out .1s;
+  -o-transition: font-size ease-in-out .1s;
+  transition: font-size ease-in-out .1s;
 
   &:hover,
   &:active {
@@ -62,10 +60,7 @@
 }
 
 .header__auth {
-  vertical-align: middle;
   font-size: 24px;
   line-height: 100px;
-  text-decoration: none;
   float: right;
-  color: $link-yellow;
 }
