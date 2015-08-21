@@ -7,7 +7,7 @@ $phone: 320px;
 $fablet: 580px;
 $tablet: 768px;
 $desktop: 980px;
-$large: 1280px;
+$large: 1300px;
 
 //Fonts
 $size-big: 72px;
@@ -131,6 +131,23 @@ $imgPath: "../img/";
   }
 }
 
+@mixin podcast-retina-icons {
+  background-position: 0 0;
+  -webkit-background-size: 38px 38px;
+  background-size: 38px 38px;
+  background-repeat: no-repeat;
+}
+
+@mixin vertical-middle-absolute {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
 html, body,
 h1, h2, h3, h4, h5, p,
 input, button,
@@ -139,14 +156,24 @@ ul, ol {
   padding: 0;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: bebas;
+}
+
 ul, ol {
   list-style: none;
+}
+
+p {
+  font-size: $size-content;
+  line-height: 1.2;
 }
 
 body {
   font-size: 14px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
+  font-family: roboto;
 }
 
 .clearfix {
@@ -187,5 +214,191 @@ body {
   }
   &:active {
     color: $link-yellow-active;
+  }
+}
+
+.link-white {
+  color: $white;
+  text-decoration: none;
+  -webkit-transition: color ease-in-out .1s;
+  -moz-transition: color ease-in-out .1s;
+  -ms-transition: color ease-in-out .1s;
+  -o-transition: color ease-in-out .1s;
+  transition: color ease-in-out .1s;
+
+  &:hover {
+    color: $link-yellow-hover;
+  }
+  &:active {
+    color: $link-yellow-active;
+  }
+}
+
+.link-black {
+  color: $link-black;
+  text-decoration: none;
+  -webkit-transition: color ease-in-out .1s;
+  -moz-transition: color ease-in-out .1s;
+  -ms-transition: color ease-in-out .1s;
+  -o-transition: color ease-in-out .1s;
+  transition: color ease-in-out .1s;
+
+  &:hover {
+    color: $link-black-hover;
+  }
+  &:active {
+    color: $link-black-active;
+  }
+}
+
+.fll {
+  float: left;
+}
+
+.flr {
+  float: right;
+}
+
+.button {
+  width: 150px;
+  height: 34px;
+  font-family: roboto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 0;
+  font-size: $size-content;
+  color: $white;
+  -webkit-transition: all ease-in-out .1s;
+  -moz-transition: all ease-in-out .1s;
+  -ms-transition: all ease-in-out .1s;
+  -o-transition: all ease-in-out .1s;
+  transition: all ease-in-out .1s;
+}
+
+.button-grey {
+  text-shadow: 0 1px #8e9295;
+  background-color: $button-light-grey;
+  -webkit-box-shadow: 0 4px $button-light-grey-shadow;
+  -moz-box-shadow:  0 4px $button-light-grey-shadow;
+  box-shadow:  0 4px $button-light-grey-shadow;
+
+  &:hover {
+    background-color: $button-light-grey-hover;
+    -webkit-box-shadow: 0 4px $button-light-grey-hover-shadow;
+    -moz-box-shadow:  0 4px $button-light-grey-hover-shadow;
+    box-shadow:  0 4px $button-light-grey-hover-shadow;
+  }
+
+  &:active {
+    color: #e6e7e8;
+    background-color: $button-light-grey-active;
+    -webkit-box-shadow: 0 4px $button-light-grey-active-shadow;
+    -moz-box-shadow:  0 4px $button-light-grey-active-shadow;
+    box-shadow:  0 4px $button-light-grey-active-shadow;
+  }
+
+  &:disabled {
+    text-shadow: 0 1px #bdc2c6;
+    background-color: $button-light-grey-disabled;
+    -webkit-box-shadow: 0 4px $button-light-grey-disabled-shadow;
+    -moz-box-shadow:  0 4px $button-light-grey-disabled-shadow;
+    box-shadow:  0 4px $button-light-grey-disabled-shadow;
+  }
+}
+
+.button-green {
+  text-shadow: 0 1px #089377;
+  background-color: $button-green;
+  -webkit-box-shadow: 0 4px $button-green-shadow;
+  -moz-box-shadow:  0 4px $button-green-shadow;
+  box-shadow:  0 4px $button-green-shadow;
+
+  &:hover {
+    background-color: $button-green-hover;
+    -webkit-box-shadow: 0 4px $button-green-hover-shadow;
+    -moz-box-shadow:  0 4px $button-green-hover-shadow;
+    box-shadow:  0 4px $button-green-hover-shadow;
+  }
+
+  &:active {
+    color: #c4e6dd;
+    background-color: $button-green-active;
+    -webkit-box-shadow: 0 4px $button-green-active-shadow;
+    -moz-box-shadow:  0 4px $button-green-active-shadow;
+    box-shadow:  0 4px $button-green-active-shadow;
+  }
+
+  &:disabled {
+    color: #9bdbcb;
+    text-shadow: 0 1px #17a88c;
+    background-color: $button-green-disabled;
+    -webkit-box-shadow: 0 4px $button-green-disabled-shadow;
+    -moz-box-shadow:  0 4px $button-green-disabled-shadow;
+    box-shadow:  0 4px $button-green-disabled-shadow;
+  }
+}
+
+.button-red {
+  text-shadow: 0 1px #ad392d;
+  background-color: $button-red;
+  -webkit-box-shadow: 0 4px $button-red-shadow;
+  -moz-box-shadow:  0 4px $button-red-shadow;
+  box-shadow:  0 4px $button-red-shadow;
+
+  &:hover {
+    background-color: $button-red-hover;
+    -webkit-box-shadow: 0 4px $button-red-hover-shadow;
+    -moz-box-shadow:  0 4px $button-red-hover-shadow;
+    box-shadow:  0 4px $button-red-hover-shadow;
+  }
+
+  &:active {
+    color: #f5cbc8;
+    background-color: $button-red-active;
+    -webkit-box-shadow: 0 4px $button-red-active-shadow;
+    -moz-box-shadow:  0 4px $button-red-active-shadow;
+    box-shadow:  0 4px $button-red-active-shadow;
+  }
+
+  &:disabled {
+    color: #f2afaa;
+    text-shadow: 0 1px #cf5245;
+    background-color: $button-light-grey-disabled;
+    -webkit-box-shadow: 0 4px $button-light-grey-disabled-shadow;
+    -moz-box-shadow:  0 4px $button-light-grey-disabled-shadow;
+    box-shadow:  0 4px $button-light-grey-disabled-shadow;
+  }
+}
+
+.button-blue {
+  text-shadow: 0 1px #1973af;
+  background-color: $button-blue;
+  -webkit-box-shadow: 0 4px $button-blue-shadow;
+  -moz-box-shadow:  0 4px $button-blue-shadow;
+  box-shadow:  0 4px $button-blue-shadow;
+
+  &:hover {
+    background-color: $button-blue-hover;
+    -webkit-box-shadow: 0 4px $button-blue-hover-shadow;
+    -moz-box-shadow:  0 4px $button-blue-hover-shadow;
+    box-shadow:  0 4px $button-blue-hover-shadow;
+  }
+
+  &:active {
+    color: #c6dbf0;
+    background-color: $button-blue-active;
+    -webkit-box-shadow: 0 4px $button-blue-active-shadow;
+    -moz-box-shadow:  0 4px $button-blue-active-shadow;
+    box-shadow:  0 4px $button-blue-active-shadow;
+  }
+
+  &:disabled {
+    color: #a2c9eb;
+    text-shadow: 0 1px #2e88c4;
+    background-color: $button-light-grey-disabled;
+    -webkit-box-shadow: 0 4px $button-light-grey-disabled-shadow;
+    -moz-box-shadow:  0 4px $button-light-grey-disabled-shadow;
+    box-shadow:  0 4px $button-light-grey-disabled-shadow;
   }
 }
