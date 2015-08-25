@@ -508,13 +508,16 @@
 
 <script>
     $(function(){
-        resizeTimelineImage();
+        var timeLine = $('.timeline-line'),
+            timelineHeight = timeLine.closest('.wrapper').height();
+        timeLine.height(timelineHeight);
+
+        $(window).load(function(){
+            resizeTimelineImage();
+        });
         $(window).resize(function(){
             resizeTimelineImage();
         });
-
-        var timelineHeight = $('.timeline-line').closest('.wrapper').height();
-        $('.timeline-line').height(timelineHeight);
 
         function resizeTimelineImage() {
             $('.timeline__item-img').each(function(){
