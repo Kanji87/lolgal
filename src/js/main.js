@@ -26,24 +26,22 @@ $(function(){
     });
 
     function getTarget() {
-        //var target = new Date();
-        //if (target.getHours() < 12 || (target.getHours() == 12)) {
-        //
-        //    target.setHours(12, 0, 0, 0);
-        //}
-        //else if (target.getHours() < 16 || (target.getHours() == 16 && target.getMinutes() < 20)) {
-        //    target.setHours(16, 20, 0, 0);
-        //}
-        //else {
-        //    target.setDate();
-        //    target.setHours(12, 0, 0, 0);
-        //}
         var today = moment(),
         target = today.clone().set('hour', 12).set('minute', 0).set('second', 0).day(today.isoWeekday() == 5 && today.get('hour') >= 12 ? 12 : 5).toDate();
         return target;
     }
 
-    function restartCountdown() {
-        $('.feature__xur-timer-countdown').countdown({until: getTarget()});
-    }
+    $('.js-feature-podcast-trigger').on('click', function(e){
+        e.preventDefault();
+        $(this).closest('.flip-container').toggleClass('flip');
+    });
+
+    $('.feature__content-podcast-playlist-item-like').on('click', function(e){
+        e.preventDefault();
+        $(this).toggleClass('feature__content-podcast-playlist-item-like--active');
+    });
+
+    $('.feature__content-podcast-playlist-item-play').on('click', function(e){
+        e.preventDefault();
+    });
 });

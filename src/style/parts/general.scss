@@ -402,3 +402,64 @@ body {
     box-shadow:  0 4px $button-light-grey-disabled-shadow;
   }
 }
+
+.meta-comments {
+  font-family: bebas;
+  text-decoration: none;
+  padding-left: 20px;
+  position: relative;
+
+  &:before {
+    content: '\f0e5';
+    font-family: FontAwesome;
+    font-size: 16px;
+    position: absolute;
+    top: -3px;
+    left: 0;
+  }
+}
+
+.meta-tag-list {
+  li {
+    display: inline-block;
+
+    &:first-child {
+      position: relative;
+
+      &:before {
+        content: '\f02c';
+        font-family: FontAwesome;
+        font-size: 16px;
+        position: absolute;
+        top: 0;
+        left: -25px;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      a:after {
+        content: '';
+      }
+    }
+
+    a {
+      @extend .link-black;
+      font-family: bebas;
+      border-bottom: 1px solid $link-black;
+
+      &:hover {
+        border-bottom: 1px solid $link-black-hover;
+      }
+
+      &:active {
+        border-bottom: 1px solid $link-black-active;
+      }
+
+      &:after {
+        content: ',';
+      }
+    }
+  }
+}

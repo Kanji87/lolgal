@@ -31,7 +31,7 @@
     </header>
 
     <section class="feature">
-        <div class="wrapper clearfix">
+        <div class="wrapper">
             <div class="feature__xur">
                 <div class="feature__xur-timer feature__xur-block">
                     <p class="feature__xur-timer-desc">Xur Agent of the Nine arrived</p>
@@ -47,86 +47,484 @@
                 </ul>
                 <a class="full-block-link" href="#"></a>
             </div>
-            <div class="feature__content feature__col">
-                <div class="feature__slider fotorama"
-                    data-width="100%"
-                    data-ratio="960/290"
-                    data-arrows="false"
-                    data-click="false"
-                    data-swipe="true">
-                    <div class="feature__slider-item">
-                        <div class="feature__slider-text-block">
-                            <p class="feature__slider-title">.12<br />выпуск<br />подкаста</p>
-                            <p class="feature__slider-desc">про destiny от Типичного галлахорна</p>
+            <div class="feature__items clearfix">
+                <div class="feature__content fll">
+                    <div class="feature__slider fotorama"
+                        data-width="100%"
+                        data-ratio="960/290"
+                        data-arrows="false"
+                        data-click="false"
+                        data-autoplay="4000"
+                        data-transitionduration="800"
+                        data-loop="true"
+                        data-swipe="true">
+                        <div class="feature__slider-item">
+                            <div class="feature__slider-text-block">
+                                <p class="feature__slider-title">.12<br />выпуск<br />подкаста</p>
+                                <p class="feature__slider-desc">про destiny от Типичного галлахорна</p>
+                            </div>
+                            <div class="feature__slider-buttons">
+                                <button class="button button-grey feature__slider-buttons-item">ТГ</button>
+                                <button class="button button-green feature__slider-buttons-item">Podster</button>
+                                <button class="button button-red feature__slider-buttons-item">Youtube</button>
+                                <button class="button button-blue feature__slider-buttons-item">iTunes</button>
+                            </div>
+                            <img src="img/slider1.jpg" alt="12 выпуск подкаста" />
                         </div>
-                        <div class="feature__slider-buttons">
-                            <button class="button button-grey feature__slider-buttons-item">ТГ</button>
-                            <button class="button button-green feature__slider-buttons-item">Podster</button>
-                            <button class="button button-red feature__slider-buttons-item">Youtube</button>
-                            <button class="button button-blue feature__slider-buttons-item">iTunes</button>
+                        <div class="feature__slider-item">
+                            <div class="feature__slider-text-block">
+                                <p class="feature__slider-title">вышел the taking king</p>
+                                <p class="feature__slider-desc">и это охуенно</p>
+                            </div>
+                            <img src="img/slider2.jpg" alt="11 выпуск подкаста" />
                         </div>
-                        <img src="img/slider1.jpg" alt="12 выпуск подкаста" />
+                        <div class="feature__slider-item"><img src="img/slider3.jpg" alt="10 выпуск подкаста" /></div>
                     </div>
-                    <div class="feature__slider-item">
-                        <div class="feature__slider-text-block">
-                            <p class="feature__slider-title">вышел the taking king</p>
-                            <p class="feature__slider-desc">и это охуенно</p>
+                    <div class="feature__content-item feature__content-news clearfix">
+                        <div class="feature__content-news-img fll">
+                            <a href="#"><img src="img/fist.jpg" alt="Кулак" width="320" height="300" /></a>
                         </div>
-                        <img src="img/slider2.jpg" alt="11 выпуск подкаста" />
+                        <div class="feature__content-news-text fll">
+                            <p class="feature__content-news-timestamp">10:45 30/12/2015</p>
+                            <h2 class="feature__content-news-title">
+                                <a class="link-black" href="#">Bungie показала новый набор экзотического
+                                    оружия на ComicCon2018</a>
+                            </h2>
+                            <p class="feature__content-news-author">.Карина лавушкина<span class="feature__content-news-date">04.08.2015</span></p>
+                            <p class="feature__content-news-lead">The Destiny Community is a thriving population of impassioned people – a stampede of Guardians so mighty they’ll run you over if you stand still. Not that you’ll ever find me complaining. It’s been an honor and a privilege to be your Community Manager. The fact of the matter is that there are too many of you for me to handle alone. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim in ipsa minima odit quis, reprehenderit tempore velit? Debitis, deleniti, laudantium!</p>
+                            <div class="feature__content-news-meta clearfix">
+                                <a class="feature__content-news-meta-readmore link-black" href="#">читать дальше...</a>
+                                <a class="feature__content-news-meta-comments meta-comments link-black" href="#">237</a>
+                                <ul class="feature__content-news-meta-tag-list meta-tag-list">
+                                    <li class="feature__content-news-meta-tag-list-item">
+                                        <a href="#">мач теги</a>
+                                    </li>
+                                    <li class="feature__content-news-meta-tag-list-item">
+                                        <a href="#">вери категории</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature__slider-item"><img src="img/slider3.jpg" alt="10 выпуск подкаста" /></div>
+                    <div class="feature__content-item feature__content-podcast">
+                        <div class="flip-container">
+                            <div class="feature__content-podcast-img fll flipper">
+                                <div class="feature__content-podcast-img-front">
+                                    <a class="feature__content-podcast-trigger feature__content-podcast-trigger-front js-feature-podcast-trigger link-yellow" href="#">прошлые выпуски</a>
+                                    <a class="js-feature-podcast-trigger" href="#"><img src="img/hunter.jpg" alt="Хантер" width="320" height="280" /></a>
+                                </div>
+                                <div class="feature__content-podcast-img-back">
+                                    <a class="feature__content-podcast-trigger feature__content-podcast-trigger-back js-feature-podcast-trigger link-black" href="#">прошлые выпуски</a>
+                                    <ul class="feature__content-podcast-playlist">
+                                        <li class="feature__content-podcast-playlist-item clearfix">
+                                            <div class="feature__content-podcast-playlist-item-info fll">
+                                                <span class="feature__content-podcast-playlist-item-date">12.08.2015</span>
+                                                <span class="feature__content-podcast-playlist-item-time">1:16:26</span>
+                                                <span class="feature__content-podcast-playlist-item-name">выпуск 12</span>
+                                            </div>
+                                            <div class=" feature__content-podcast-playlist-item-meta flr">
+                                                <a class="feature__content-podcast-playlist-item-like feature__content-podcast-playlist-item-like--active" href="#"><i
+                                                    class="fa fa-heart"></i></a>
+                                                <a class="feature__content-podcast-playlist-item-play" href="#"><i
+                                                    class="fa fa-play"></i></a>
+                                            </div>
+                                        </li>
+                                        <li class="feature__content-podcast-playlist-item clearfix">
+                                            <div class="feature__content-podcast-playlist-item-info fll">
+                                                <span class="feature__content-podcast-playlist-item-date">12.08.2015</span>
+                                                <span class="feature__content-podcast-playlist-item-time">1:16:26</span>
+                                                <span class="feature__content-podcast-playlist-item-name">выпуск 11</span>
+                                            </div>
+                                            <div class=" feature__content-podcast-playlist-item-meta flr">
+                                                <a class="feature__content-podcast-playlist-item-like feature__content-podcast-playlist-item-like--active" href="#"><i
+                                                    class="fa fa-heart"></i></a>
+                                                <a class="feature__content-podcast-playlist-item-play" href="#"><i
+                                                    class="fa fa-play"></i></a>
+                                            </div>
+                                        </li>
+                                        <li class="feature__content-podcast-playlist-item clearfix">
+                                            <div class="feature__content-podcast-playlist-item-info fll">
+                                                <span class="feature__content-podcast-playlist-item-date">12.08.2015</span>
+                                                <span class="feature__content-podcast-playlist-item-time">1:16:26</span>
+                                                <span class="feature__content-podcast-playlist-item-name">выпуск 10</span>
+                                            </div>
+                                            <div class=" feature__content-podcast-playlist-item-meta flr">
+                                                <a class="feature__content-podcast-playlist-item-like" href="#"><i
+                                                    class="fa fa-heart"></i></a>
+                                                <a class="feature__content-podcast-playlist-item-play" href="#"><i
+                                                    class="fa fa-play"></i></a>
+                                            </div>
+                                        </li>
+                                        <li class="feature__content-podcast-playlist-item clearfix">
+                                            <div class="feature__content-podcast-playlist-item-info fll">
+                                                <span class="feature__content-podcast-playlist-item-date">12.08.2015</span>
+                                                <span class="feature__content-podcast-playlist-item-time">1:16:26</span>
+                                                <span class="feature__content-podcast-playlist-item-name">выпуск 9</span>
+                                            </div>
+                                            <div class=" feature__content-podcast-playlist-item-meta flr">
+                                                <a class="feature__content-podcast-playlist-item-like" href="#"><i
+                                                    class="fa fa-heart"></i></a>
+                                                <a class="feature__content-podcast-playlist-item-play" href="#"><i
+                                                    class="fa fa-play"></i></a>
+                                            </div>
+                                        </li>
+                                        <li class="feature__content-podcast-playlist-item clearfix">
+                                            <div class="feature__content-podcast-playlist-item-info fll">
+                                                <span class="feature__content-podcast-playlist-item-date">12.08.2015</span>
+                                                <span class="feature__content-podcast-playlist-item-time">1:16:26</span>
+                                                <span class="feature__content-podcast-playlist-item-name">выпуск 8</span>
+                                            </div>
+                                            <div class=" feature__content-podcast-playlist-item-meta flr">
+                                                <a class="feature__content-podcast-playlist-item-like" href="#"><i
+                                                    class="fa fa-heart"></i></a>
+                                                <a class="feature__content-podcast-playlist-item-play" href="#"><i
+                                                    class="fa fa-play"></i></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature__content-podcast-text fll">
+                            <h2 class="feature__content-podcast-title">
+                                <a href="#" class="link-white">.подкаст о destiny</a>
+                            </h2>
+                            <p class="feature__content-podcast-lead">Первый, лучший, главный и самый популярный русскоязычный подкаст про Destiny. Самые горячие новости, самые жареные факты, самые грязные подробности из режима PvP.</p>
+                            <div class="feature__content-podcast-link">
+                                <a class="feature__content-podcast-link-item feature__content-podcast-link-youtube" href="#"></a><a
+                                class="feature__content-podcast-link-item feature__content-podcast-link-podster" href="#"></a><a
+                                class="feature__content-podcast-link-item feature__content-podcast-link-itunes" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature__content-item feature__content-news clearfix">
-                    <div class="feature__content-news-img fll">
-                        <a href="#"><img src="img/fist.jpg" alt="Кулак" width="320" height="300" /></a>
+                <div class="feature__widget fll">
+                    <div class="feature__widget-char">
+                        <div class="feature__widget-char-info clearfix">
+                            <img class="feature__widget-char-img fll" src="img/icons/skolas_revenge_icon.png" alt="" />
+                            <div class="fll">
+                                <p class="feature__widget-char-class" data-lvl="34">Warlock</p>
+                                <p class="feature__widget-char-race">awoken female</p>
+                            </div>
+                        </div>
+                        <ul class="feature__widget-char-select">
+                            <li class="feature__widget-char-select-item feature__widget-char-select-item--active"></li><li class="feature__widget-char-select-item"></li><li class="feature__widget-char-select-item"></li>
+                        </ul>
                     </div>
-                    <div class="feature__content-news-text fll">
-                        <p class="feature__content-news-timestamp">10:45 30/12/2015</p>
-                        <h2 class="feature__content-news-title">
-                            <a class="link-black" href="#">Bungie показала новый набор экзотического
-                                оружия на ComicCon2018</a>
-                         </h2>
-                        <p class="feature__content-news-author">.Карина лавушкина<span class="feature__content-news-date">04.08.2015</span></p>
-                        <p class="feature__content-news-lead">The Destiny Community is a thriving population of impassioned people – a stampede of Guardians so mighty they’ll run you over if you stand still. Not that you’ll ever find me complaining. It’s been an honor and a privilege to be your Community Manager. The fact of the matter is that there are too many of you for me to handle alone. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim in ipsa minima odit quis, reprehenderit tempore velit? Debitis, deleniti, laudantium!</p>
-                        <div class="feature__content-news-meta clearfix">
-                            <a class="feature__content-news-meta-readmore link-black" href="#">читать дальше...</a>
-                            <a class="feature__content-news-meta-comments link-black" href="#">237</a>
-                            <ul class="feature__content-news-meta-tags">
-                                <li class="feature__content-news-meta-tags-item feature__content-news-meta-tags-icon"><i class="fa fa-tags"></i></li>
-                                <li class="feature__content-news-meta-tags-item">
-                                    <a class="link-black" href="#">мач теги</a>
-                                </li>
-                                <li class="feature__content-news-meta-tags-item">
-                                    <a class="link-black" href="">вери категории</a>
-                                </li>
+                    <div class="feature__widget-activity-block feature__widget-activity-block--nightfall feature__widget-activity--done">
+                        <p class="feature__widget-activity-block-title">weekly nightfall strike</p>
+                        <p class="feature__widget-activity-block-name">Название страйка</p>
+                        <ul class="feature__widget-activity-block-modifier-list">
+                            <li class="feature__widget-activity-block-modifier-item">epic</li>
+                            <li class="feature__widget-activity-block-modifier-item">angry</li>
+                            <li class="feature__widget-activity-block-modifier-item">lightswitch</li>
+                            <li class="feature__widget-activity-block-modifier-item">brawler</li>
+                            <li class="feature__widget-activity-block-modifier-item">nightfall</li>
+                        </ul>
+                    </div>
+                    <div class="feature__widget-activity-block feature__widget-activity-block--heroic-strike feature__widget-activity--done">
+                        <p class="feature__widget-activity-block-title">weekly heroic strike</p>
+                        <p class="feature__widget-activity-block-name">Название страйка</p>
+                        <ul class="feature__widget-activity-block-modifier-list">
+                            <li class="feature__widget-activity-block-modifier-item">heroic</li>
+                            <li class="feature__widget-activity-block-modifier-item">specialist</li>
+                        </ul>
+                    </div>
+                    <div class="feature__widget-activity-block feature__widget-activity-block--daily-story">
+                        <p class="feature__widget-activity-block-title">daily story mission</p>
+                        <p class="feature__widget-activity-block-name">wolves' gambit</p>
+                        <ul class="feature__widget-activity-block-modifier-list">
+                            <li class="feature__widget-activity-block-modifier-item">heroic</li>
+                            <li class="feature__widget-activity-block-modifier-item">specialist</li>
+                        </ul>
+                    </div>
+                    <div class="feature__widget-activity-block feature__widget-activity-block--daily-crusible">
+                        <p class="feature__widget-activity-block-title">daily crucible playlist</p>
+                        <p class="feature__widget-activity-block-name">skirmish</p>
+                    </div>
+                    <div class="feature__widget-activity-block feature__widget-activity-block--raid">
+                        <p class="feature__widget-activity-block-title">vault of glass</p>
+                        <div class="feature__widget-activity-raid-progress">
+                            <span class="feature__widget-activity-raid-lvl">level 26</span>
+                            <ul class="feature__widget-activity-raid-progressbar">
+                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                <li class="feature__widget-activity-raid-progressbar-item"></li>
+                            </ul>
+                        </div>
+                        <div class="feature__widget-activity-raid-progress">
+                            <span class="feature__widget-activity-raid-lvl">level 30</span>
+                            <ul class="feature__widget-activity-raid-progressbar">
+                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="feature__content-item feature__content-podcast">
-                    <div class="feature__content-podcast-img fll">
-                        <a class="feature__content-podcast-trigger js-feature-podcast-trigger link-yellow" href="#">прошлые выпуски</a>
-                        <a class="js-feature-podcast-trigger" href="#"><img src="img/hunter.jpg" alt="Хантер" width="320" height="280" /></a>
-                    </div>
-                    <div class="feature__content-podcast-text fll">
-                        <h2 class="feature__content-podcast-title">
-                            <a href="#" class="link-white">.подкаст о destiny</a>
-                        </h2>
-                        <p class="feature__content-podcast-lead">Первый, лучший, главный и самый популярный русскоязычный подкаст про Destiny. Самые горячие новости, самые жареные факты, самые грязные подробности из режима PvP.</p>
-                        <div class="feature__content-podcast-link">
-                            <a class="feature__content-podcast-link-item feature__content-podcast-link-youtube" href="#"></a><a
-                            class="feature__content-podcast-link-item feature__content-podcast-link-podster" href="#"></a><a
-                            class="feature__content-podcast-link-item feature__content-podcast-link-itunes" href="#"></a>
+                    <div class="feature__widget-activity-block feature__widget-activity-block--raid">
+                        <p class="feature__widget-activity-block-title">crota's end</p>
+                        <div class="feature__widget-activity-raid-progress">
+                            <span class="feature__widget-activity-raid-lvl">level 30</span>
+                            <ul class="feature__widget-activity-raid-progressbar">
+                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                <li class="feature__widget-activity-raid-progressbar-item"></li>
+                            </ul>
+                        </div>
+                        <div class="feature__widget-activity-raid-progress">
+                            <span class="feature__widget-activity-raid-lvl">level 33</span>
+                            <ul class="feature__widget-activity-raid-progressbar">
+                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                <li class="feature__widget-activity-raid-progressbar-item"></li>
+                            </ul>
                         </div>
                     </div>
+                    <p class="feature__widget-activity-title">prison of elders</p>
+                    <div class="feature__widget-activity-block feature__widget-activity-block--forever-eater">
+                        <p class="feature__widget-activity-block-title">the forever eater</p>
+                        <p class="feature__widget-activity-block-name">level 32</p>
+                    </div>
+                    <div class="feature__widget-activity-block feature__widget-activity-block--machine-wrath feature__widget-activity--done">
+                        <p class="feature__widget-activity-block-title">machine wrath</p>
+                        <p class="feature__widget-activity-block-name">level 34</p>
+                    </div>
+                    <div class="feature__widget-activity-block feature__widget-activity-block--skolas">
+                        <p class="feature__widget-activity-block-title">skolas's revenge</p>
+                        <p class="feature__widget-activity-block-name">level 35</p>
+                        <ul class="feature__widget-activity-block-modifier-list">
+                            <li class="feature__widget-activity-block-modifier-item">skolas > catapult</li>
+                            <li class="feature__widget-activity-block-modifier-item">angry</li>
+                        </ul>
+                    </div>
+                    <a class="feature__widget-link-button" href="#">advisors</a>
                 </div>
-            </div>
-            <div class="feature__widget feature__col">
             </div>
         </div>
     </section>
-    <section class="timeline wrapper"></section>
+    <section class="timeline-head clearfix">
+        <div class="wrapper">
+            <ul class="timeline__date-list fll">
+                <li class="timeline__date-list-item">
+                    <a href="#">апрель.15</a>
+                </li>
+                <li class="timeline__date-list-item">
+                    <a href="#">май.15</a>
+                </li>
+                <li class="timeline__date-list-item">
+                    <a href="#">июнь.15</a>
+                </li>
+                <li class="timeline__date-list-item">
+                    <a href="#">июль.15</a>
+                </li>
+                <li class="timeline__date-list-item timeline__date-list-item--active">
+                    <a href="#">август.15</a>
+                </li>
+            </ul>
+            <ul class="timeline__tag-list meta-tag-list flr">
+                <li class="timeline__tag-list-item">
+                    <a href="#">вери категории</a>
+                </li>
+                <li class="timeline__tag-list-item">
+                    <a href="#">мач теги</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="timeline-content">
+        <div class="wrapper">
+            <div class="timeline-line"></div>
+            <ul class="timeline clearfix">
+                <li class="timeline__item" data-date="21">
+                    <div class="timeline__item-img" style="background-image: url(http://www.cinemablend.com/images/sections/63887/Destiny_63887.jpg)"></div>
+                    <div class="timeline__item-content">
+                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                        <h3 class="timeline__item-title">The Art of War</h3>
+                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <div class="timeline__item-meta clearfix">
+                            <ul class="timeline__item-taglist meta-tag-list fll">
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">тегушки</a>
+                                </li>
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">категориушки</a>
+                                </li>
+                            </ul>
+                            <a class="timeline__item-comments meta-comments link-black flr" href="">554</a></div>
+                    </div>
+                </li>
+                <li class="timeline__item" data-date="17">
+                    <div class="timeline__item-img" style="background-image: url(http://blogs-images.forbes.com/insertcoin/files/2014/09/destiny-50.jpg)"></div>
+                    <div class="timeline__item-content">
+                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                        <h3 class="timeline__item-title">Bungie Weekly Update</h3>
+                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <div class="timeline__item-meta clearfix">
+                            <ul class="timeline__item-taglist meta-tag-list fll">
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">тегушки</a>
+                                </li>
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">категориушки</a>
+                                </li>
+                            </ul>
+                            <a class="timeline__item-comments meta-comments link-black flr" href="">554</a></div>
+                    </div>
+                </li>
+                <li class="timeline__item" data-date="16">
+                    <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)"></div>
+                    <div class="timeline__item-content">
+                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                        <h3 class="timeline__item-title">Bungie показала новый набор экзотического оружия на ComicCon2018</h3>
+                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <div class="timeline__item-meta clearfix">
+                            <ul class="timeline__item-taglist meta-tag-list fll">
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">тегушки</a>
+                                </li>
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">категориушки</a>
+                                </li>
+                            </ul>
+                            <a class="timeline__item-comments meta-comments link-black flr" href="">554</a></div>
+                    </div>
+                </li>
+                <li class="timeline__item" data-date="12">
+                    <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)"></div>
+                    <div class="timeline__item-content">
+                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                        <h3 class="timeline__item-title">Bungie Day</h3>
+                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <div class="timeline__item-meta clearfix">
+                            <ul class="timeline__item-taglist meta-tag-list fll">
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">тегушки</a>
+                                </li>
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">категориушки</a>
+                                </li>
+                            </ul>
+                            <a class="timeline__item-comments meta-comments link-black flr" href="">554</a></div>
+                    </div>
+                </li>
+                <li class="timeline__item" data-date="9">
+                    <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)"></div>
+                    <div class="timeline__item-content">
+                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                        <h3 class="timeline__item-title">Destiny Weapon<br>Tuning 2.0</h3>
+                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <div class="timeline__item-meta clearfix">
+                            <ul class="timeline__item-taglist meta-tag-list fll">
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">тегушки</a>
+                                </li>
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">категориушки</a>
+                                </li>
+                            </ul>
+                            <a class="timeline__item-comments meta-comments link-black flr" href="">554</a></div>
+                    </div>
+                </li>
+                <li class="timeline__item" data-date="7">
+                    <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)"></div>
+                    <div class="timeline__item-content">
+                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                        <h3 class="timeline__item-title">Destiny Hot Fix</h3>
+                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <div class="timeline__item-meta clearfix">
+                            <ul class="timeline__item-taglist meta-tag-list fll">
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">тегушки</a>
+                                </li>
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">категориушки</a>
+                                </li>
+                            </ul>
+                            <a class="timeline__item-comments meta-comments link-black flr" href="">554</a></div>
+                    </div>
+                </li>
+                <li class="timeline__item" data-date="5">
+                    <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)"></div>
+                    <div class="timeline__item-content">
+                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                        <h3 class="timeline__item-title">Bungie Day</h3>
+                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <div class="timeline__item-meta clearfix">
+                            <ul class="timeline__item-taglist meta-tag-list fll">
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">тегушки</a>
+                                </li>
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">категориушки</a>
+                                </li>
+                            </ul>
+                            <a class="timeline__item-comments meta-comments link-black flr" href="">554</a></div>
+                    </div>
+                </li>
+                <li class="timeline__item" data-date="4">
+                    <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)"></div>
+                    <div class="timeline__item-content">
+                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                        <h3 class="timeline__item-title">Destiny Weapon<br>Tuning 2.0</h3>
+                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <div class="timeline__item-meta clearfix">
+                            <ul class="timeline__item-taglist meta-tag-list fll">
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">тегушки</a>
+                                </li>
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">категориушки</a>
+                                </li>
+                            </ul>
+                            <a class="timeline__item-comments meta-comments link-black flr" href="">554</a></div>
+                    </div>
+                </li>
+                <li class="timeline__item" data-date="2">
+                    <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)"></div>
+                    <div class="timeline__item-content">
+                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                        <h3 class="timeline__item-title">Destiny Hot Fix</h3>
+                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <div class="timeline__item-meta clearfix">
+                            <ul class="timeline__item-taglist meta-tag-list fll">
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">тегушки</a>
+                                </li>
+                                <li class="timeline__item-tag-item">
+                                    <a href="#">категориушки</a>
+                                </li>
+                            </ul>
+                            <a class="timeline__item-comments meta-comments link-black flr" href="">554</a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
     <section class="about wrapper"></section>
+
+<script>
+    $(function(){
+        resizeTimelineImage();
+        $(window).resize(function(){
+            resizeTimelineImage();
+        });
+
+        var timelineHeight = $('.timeline-line').closest('.wrapper').height();
+        $('.timeline-line').height(timelineHeight);
+
+        function resizeTimelineImage() {
+            $('.timeline__item-img').each(function(){
+                var parentHeight = $(this).closest('.timeline__item').height();
+                $(this).height(parentHeight);
+                console.log(parentHeight);
+            });
+        }
+    })
+</script>
 
     <footer class="footer wrapper"></footer>
 </body>
