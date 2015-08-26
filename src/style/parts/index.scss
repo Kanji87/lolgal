@@ -1,7 +1,7 @@
 .feature {
   background-color: $bg-green;
 
-  .wrapper{
+  .wrapper {
     background-color: $bg-green;
   }
 }
@@ -125,7 +125,7 @@
 
 .feature__slider-item {
   position: relative;
-  
+
   &:after {
     content: '';
     position: absolute;
@@ -338,7 +338,7 @@
 .feature__content-podcast-link-youtube {
   background-position: 0 0;
 
-  @include respond-to(retina){
+  @include respond-to(retina) {
     @include podcast-retina-icons;
     background-image: url($imgPath + 'icons/podcast_youtube.png');
   }
@@ -346,7 +346,7 @@
   &:hover {
     background-position: 0 -42px;
 
-    @include respond-to(retina){
+    @include respond-to(retina) {
       @include podcast-retina-icons;
       background-image: url($imgPath + 'icons/podcast_youtube_hover.png');
     }
@@ -355,7 +355,7 @@
   &:active {
     background-position: 0 -85px;
 
-    @include respond-to(retina){
+    @include respond-to(retina) {
       @include podcast-retina-icons;
       background-image: url($imgPath + 'icons/podcast_youtube_active.png');
     }
@@ -365,7 +365,7 @@
 .feature__content-podcast-link-podster {
   background-position: -46px 0;
 
-  @include respond-to(retina){
+  @include respond-to(retina) {
     @include podcast-retina-icons;
     background-image: url($imgPath + 'icons/podcast_podster.png');
   }
@@ -373,7 +373,7 @@
   &:hover {
     background-position: -46px -42px;
 
-    @include respond-to(retina){
+    @include respond-to(retina) {
       @include podcast-retina-icons;
       background-image: url($imgPath + 'icons/podcast_podster_hover.png');
     }
@@ -382,7 +382,7 @@
   &:active {
     background-position: -46px -85px;
 
-    @include respond-to(retina){
+    @include respond-to(retina) {
       @include podcast-retina-icons;
       background-image: url($imgPath + 'icons/podcast_podster_active.png');
     }
@@ -392,7 +392,7 @@
 .feature__content-podcast-link-itunes {
   background-position: -92px 0;
 
-  @include respond-to(retina){
+  @include respond-to(retina) {
     @include podcast-retina-icons;
     background-image: url($imgPath + 'icons/podcast_itunes.png');
   }
@@ -400,7 +400,7 @@
   &:hover {
     background-position: -92px -42px;
 
-    @include respond-to(retina){
+    @include respond-to(retina) {
       @include podcast-retina-icons;
       background-image: url($imgPath + 'icons/podcast_itunes_hover.png');
     }
@@ -409,7 +409,7 @@
   &:active {
     background-position: -92px -85px;
 
-    @include respond-to(retina){
+    @include respond-to(retina) {
       @include podcast-retina-icons;
       background-image: url($imgPath + 'icons/podcast_itunes_active.png');
     }
@@ -430,6 +430,7 @@
 .flip-container.flip .feature__content-podcast-img-back {
   transform: rotateY(0deg);
 }
+
 .flip-container.flip .feature__content-podcast-img-front {
   transform: rotateY(-180deg);
 }
@@ -451,7 +452,7 @@
 }
 
 .feature__content-podcast-img-front,
-.feature__content-podcast-img-back{
+.feature__content-podcast-img-back {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -470,7 +471,7 @@
   font-family: bebas;
   padding-right: 32px;
   z-index: 10;
-  
+
   &:after {
     font-family: FontAwesome;
     position: absolute;
@@ -751,11 +752,11 @@
   width: 100%;
   text-decoration: none;
   padding: 10px 0 5px;
-  
+
   &:hover {
     background-color: $button-yellow-hover;
   }
-  
+
   &:active {
     background-color: $button-yellow-active;
   }
@@ -793,7 +794,7 @@
     font-family: bebas;
     font-size: $size-4;
     color: $black;
-    
+
     &:hover {
       font-size: 28px;
       color: $black;
@@ -821,10 +822,16 @@
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
-  height: 1090px;
-  overflow-y: scroll;
+//  height: 1090px;
+//  overflow: hidden;
+//  overflow-y: scroll;
   position: relative;
-  padding: 0;
+//  padding: 5px 0;
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+  top: 10px;
+  bottom: 10px;
 }
 
 .timeline__item {
@@ -840,6 +847,7 @@
   display: block;
   background-color: $white;
   z-index: 15;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   text-decoration: none;
 
   &:first-of-type {
@@ -915,16 +923,52 @@
 
 .timeline__item-img {
   float: left;
-  width: 45%;
+  width: 43%;
+  position: relative;
   -webkit-background-size: cover;
   background-size: cover;
+
+  &:hover {
+    .timeline__item-img-meta {
+      opacity: 1;
+    }
+  }
+}
+
+.timeline__item-img-meta {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba($bg-green, .6);
+  text-align: center;
+  opacity: 0;
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+  -webkit-transition: opacity ease-in-out .3s;
+  -moz-transition: opacity ease-in-out .3s;
+  -ms-transition: opacity ease-in-out .3s;
+  -o-transition: opacity ease-in-out .3s;
+  transition: opacity ease-in-out .3s;
+}
+
+.timeline__item-img-meta-block {
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+}
+
+.timeline__item-img-meta-item {
+  color: $white;
+  font-size: $size-4;
+  margin: 0 21px;
 }
 
 .timeline__item-content {
   float: left;
-  width: 55%;
+  width: 57%;
   box-sizing: border-box;
-  padding: 20px 15px 20px 10px;
+  padding: 20px 15px 20px 20px;
 }
 
 .timeline__item-timestamp,
@@ -936,6 +980,8 @@
 .timeline__item-title {
   @extend .feature__content-news-title;
   height: auto;
+  max-height: 87px;
+  overflow: hidden;
 }
 
 .timeline__item-meta {
@@ -948,12 +994,12 @@
 
 .timeline__item-taglist {
   padding-left: 20px;
-  
+
   li:first-child:before {
     font-size: 15px;
     left: -20px;
   }
-  
+
   a {
     font-size: $size-5;
   }
@@ -966,4 +1012,141 @@
   top: 0;
   left: 50%;
   background-color: $bg-light-grey;
+}
+
+.about {
+  background-color: $bg-red;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    top: -10px;
+    left: 0;
+    z-index: 999;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.25))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+  }
+
+  .wrapper {
+    background-color: $bg-red;
+  }
+}
+
+.about__title {
+  color: $white;
+  font-family: bebas;
+  font-size: $size-1;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.about__content {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.about__content-col {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  box-sizing: border-box;
+
+  &:last-child {
+    padding-left: 5%;
+    margin-right: 0;
+  }
+}
+
+.about__founders-col {
+  width: 180px;
+  float: left;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-left: 40px;
+  }
+}
+
+.about__founders-title {
+  font-family: bebas;
+  text-align: center;
+  font-size: $size-4;
+  line-height: .8;
+  color: $white;
+  margin-bottom: 10px;
+}
+
+.about__founders-img {
+  margin-bottom: 30px;
+}
+
+.about__founders-social-link {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  background-color: $white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  line-height: 34px;
+  text-align: center;
+  font-size: 20px;
+  color: $bg-red;
+  margin-left: 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.about__team-title {
+  font-family: bebas;
+  font-size: $size-4;
+  color: $white;
+  margin-bottom: 5px;
+}
+
+.about__team-list {
+  margin-bottom: 20px;
+  font-size: $size-5;
+  color: $white;
+  line-height: 1.2;
+}
+
+.about__contact {
+  font-family: bebas;
+  color: $white;
+  font-size: $size-4;
+  margin-top: 43px;
+}
+
+.about__desc {
+  padding-top: 15px;
+}
+
+.about__desc-title {
+  font-family: bebas;
+  font-size: $size-4;
+  color: $white;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.about__desc-text {
+  font-size: $size-5;
+  color: $white;
+  margin-bottom: 30px;
+  line-height: 1;
 }

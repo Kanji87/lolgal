@@ -262,6 +262,7 @@ body {
 .button {
   width: 150px;
   height: 34px;
+  outline: none;
   font-family: roboto;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -461,5 +462,12 @@ body {
         content: ',';
       }
     }
+  }
+}
+
+
+@include respond-to(large) {
+  html, body {
+    width: 1280px;
   }
 }
