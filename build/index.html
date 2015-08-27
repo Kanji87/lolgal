@@ -5,9 +5,7 @@
     <title>Lolgal</title>
     <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link
-        href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700italic,700&subset=latin,cyrillic'
-        rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css" />-->
     <link rel="stylesheet" href="css/main.css" />
@@ -204,107 +202,324 @@
                     </div>
                 </div>
                 <div class="feature__widget fll">
-                    <div class="feature__widget-char">
-                        <div class="feature__widget-char-info clearfix">
-                            <img class="feature__widget-char-img fll" src="img/icons/skolas_revenge_icon.png" alt="" />
-                            <div class="fll">
-                                <p class="feature__widget-char-class" data-lvl="34">Warlock</p>
-                                <p class="feature__widget-char-race">awoken female</p>
+                    <div class="feature__widget-char-list fotorama"
+                        data-height="840"
+                        data-arrows="false"
+                        data-loop="true"
+                        data-swipe="true"
+                        data-navposition="top">
+                        <div class="feature__widget-char-list-item">
+                            <div class="feature__widget-char">
+                                <div class="feature__widget-char-info clearfix">
+                                    <img class="feature__widget-char-img fll" src="img/icons/skolas_revenge_icon.png" alt="" />
+                                    <div class="fll">
+                                        <p class="feature__widget-char-class" data-lvl="34">Warlock</p>
+                                        <p class="feature__widget-char-race">awoken female</p>
+                                    </div>
+                                </div>
+                                <!--<ul class="feature__widget-char-select">-->
+                                    <!--<li class="feature__widget-char-select-item feature__widget-char-select-item--active"></li><li class="feature__widget-char-select-item"></li><li class="feature__widget-char-select-item"></li>-->
+                                <!--</ul>-->
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--nightfall feature__widget-activity--done">
+                                <p class="feature__widget-activity-block-title">weekly nightfall strike</p>
+                                <p class="feature__widget-activity-block-name">Название страйка</p>
+                                <ul class="feature__widget-activity-block-modifier-list">
+                                    <li class="feature__widget-activity-block-modifier-item">epic</li>
+                                    <li class="feature__widget-activity-block-modifier-item">angry</li>
+                                    <li class="feature__widget-activity-block-modifier-item">lightswitch</li>
+                                    <li class="feature__widget-activity-block-modifier-item">brawler</li>
+                                    <li class="feature__widget-activity-block-modifier-item">nightfall</li>
+                                </ul>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--heroic-strike feature__widget-activity--done">
+                                <p class="feature__widget-activity-block-title">weekly heroic strike</p>
+                                <p class="feature__widget-activity-block-name">Название страйка</p>
+                                <ul class="feature__widget-activity-block-modifier-list">
+                                    <li class="feature__widget-activity-block-modifier-item">heroic</li>
+                                    <li class="feature__widget-activity-block-modifier-item">specialist</li>
+                                </ul>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--daily-story">
+                                <p class="feature__widget-activity-block-title">daily story mission</p>
+                                <p class="feature__widget-activity-block-name">wolves' gambit</p>
+                                <ul class="feature__widget-activity-block-modifier-list">
+                                    <li class="feature__widget-activity-block-modifier-item">heroic</li>
+                                    <li class="feature__widget-activity-block-modifier-item">specialist</li>
+                                </ul>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--daily-crusible">
+                                <p class="feature__widget-activity-block-title">daily crucible playlist</p>
+                                <p class="feature__widget-activity-block-name">skirmish</p>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--raid">
+                                <p class="feature__widget-activity-block-title">vault of glass</p>
+                                <div class="feature__widget-activity-raid-progress">
+                                    <span class="feature__widget-activity-raid-lvl">level 26</span>
+                                    <ul class="feature__widget-activity-raid-progressbar">
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                    </ul>
+                                </div>
+                                <div class="feature__widget-activity-raid-progress">
+                                    <span class="feature__widget-activity-raid-lvl">level 30</span>
+                                    <ul class="feature__widget-activity-raid-progressbar">
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--raid">
+                                <p class="feature__widget-activity-block-title">crota's end</p>
+                                <div class="feature__widget-activity-raid-progress">
+                                    <span class="feature__widget-activity-raid-lvl">level 30</span>
+                                    <ul class="feature__widget-activity-raid-progressbar">
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                    </ul>
+                                </div>
+                                <div class="feature__widget-activity-raid-progress">
+                                    <span class="feature__widget-activity-raid-lvl">level 33</span>
+                                    <ul class="feature__widget-activity-raid-progressbar">
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="feature__widget-activity-title">prison of elders</p>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--forever-eater">
+                                <p class="feature__widget-activity-block-title">the forever eater</p>
+                                <p class="feature__widget-activity-block-name">level 32</p>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--machine-wrath feature__widget-activity--done">
+                                <p class="feature__widget-activity-block-title">machine wrath</p>
+                                <p class="feature__widget-activity-block-name">level 34</p>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--skolas">
+                                <p class="feature__widget-activity-block-title">skolas's revenge</p>
+                                <p class="feature__widget-activity-block-name">level 35</p>
+                                <ul class="feature__widget-activity-block-modifier-list">
+                                    <li class="feature__widget-activity-block-modifier-item">skolas > catapult</li>
+                                    <li class="feature__widget-activity-block-modifier-item">angry</li>
+                                </ul>
                             </div>
                         </div>
-                        <ul class="feature__widget-char-select">
-                            <li class="feature__widget-char-select-item feature__widget-char-select-item--active"></li><li class="feature__widget-char-select-item"></li><li class="feature__widget-char-select-item"></li>
-                        </ul>
-                    </div>
-                    <div class="feature__widget-activity-block feature__widget-activity-block--nightfall feature__widget-activity--done">
-                        <p class="feature__widget-activity-block-title">weekly nightfall strike</p>
-                        <p class="feature__widget-activity-block-name">Название страйка</p>
-                        <ul class="feature__widget-activity-block-modifier-list">
-                            <li class="feature__widget-activity-block-modifier-item">epic</li>
-                            <li class="feature__widget-activity-block-modifier-item">angry</li>
-                            <li class="feature__widget-activity-block-modifier-item">lightswitch</li>
-                            <li class="feature__widget-activity-block-modifier-item">brawler</li>
-                            <li class="feature__widget-activity-block-modifier-item">nightfall</li>
-                        </ul>
-                    </div>
-                    <div class="feature__widget-activity-block feature__widget-activity-block--heroic-strike feature__widget-activity--done">
-                        <p class="feature__widget-activity-block-title">weekly heroic strike</p>
-                        <p class="feature__widget-activity-block-name">Название страйка</p>
-                        <ul class="feature__widget-activity-block-modifier-list">
-                            <li class="feature__widget-activity-block-modifier-item">heroic</li>
-                            <li class="feature__widget-activity-block-modifier-item">specialist</li>
-                        </ul>
-                    </div>
-                    <div class="feature__widget-activity-block feature__widget-activity-block--daily-story">
-                        <p class="feature__widget-activity-block-title">daily story mission</p>
-                        <p class="feature__widget-activity-block-name">wolves' gambit</p>
-                        <ul class="feature__widget-activity-block-modifier-list">
-                            <li class="feature__widget-activity-block-modifier-item">heroic</li>
-                            <li class="feature__widget-activity-block-modifier-item">specialist</li>
-                        </ul>
-                    </div>
-                    <div class="feature__widget-activity-block feature__widget-activity-block--daily-crusible">
-                        <p class="feature__widget-activity-block-title">daily crucible playlist</p>
-                        <p class="feature__widget-activity-block-name">skirmish</p>
-                    </div>
-                    <div class="feature__widget-activity-block feature__widget-activity-block--raid">
-                        <p class="feature__widget-activity-block-title">vault of glass</p>
-                        <div class="feature__widget-activity-raid-progress">
-                            <span class="feature__widget-activity-raid-lvl">level 26</span>
-                            <ul class="feature__widget-activity-raid-progressbar">
-                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
-                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
-                                <li class="feature__widget-activity-raid-progressbar-item"></li>
-                                <li class="feature__widget-activity-raid-progressbar-item"></li>
-                            </ul>
+                        <div class="feature__widget-char-list-item">
+                            <div class="feature__widget-char">
+                                <div class="feature__widget-char-info clearfix">
+                                    <img class="feature__widget-char-img fll" src="img/icons/skolas_revenge_icon.png" alt="" />
+                                    <div class="fll">
+                                        <p class="feature__widget-char-class" data-lvl="28">titan</p>
+                                        <p class="feature__widget-char-race">exo female</p>
+                                    </div>
+                                </div>
+                                <!--<ul class="feature__widget-char-select">-->
+                                    <!--<li class="feature__widget-char-select-item feature__widget-char-select-item--active"></li><li class="feature__widget-char-select-item"></li><li class="feature__widget-char-select-item"></li>-->
+                                <!--</ul>-->
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--nightfall">
+                                <p class="feature__widget-activity-block-title">weekly nightfall strike</p>
+                                <p class="feature__widget-activity-block-name">Название страйка</p>
+                                <ul class="feature__widget-activity-block-modifier-list">
+                                    <li class="feature__widget-activity-block-modifier-item">epic</li>
+                                    <li class="feature__widget-activity-block-modifier-item">angry</li>
+                                    <li class="feature__widget-activity-block-modifier-item">lightswitch</li>
+                                    <li class="feature__widget-activity-block-modifier-item">brawler</li>
+                                    <li class="feature__widget-activity-block-modifier-item">nightfall</li>
+                                </ul>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--heroic-strike feature__widget-activity--done">
+                                <p class="feature__widget-activity-block-title">weekly heroic strike</p>
+                                <p class="feature__widget-activity-block-name">Название страйка</p>
+                                <ul class="feature__widget-activity-block-modifier-list">
+                                    <li class="feature__widget-activity-block-modifier-item">heroic</li>
+                                    <li class="feature__widget-activity-block-modifier-item">specialist</li>
+                                </ul>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--daily-story">
+                                <p class="feature__widget-activity-block-title">daily story mission</p>
+                                <p class="feature__widget-activity-block-name">wolves' gambit</p>
+                                <ul class="feature__widget-activity-block-modifier-list">
+                                    <li class="feature__widget-activity-block-modifier-item">heroic</li>
+                                    <li class="feature__widget-activity-block-modifier-item">specialist</li>
+                                </ul>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--daily-crusible">
+                                <p class="feature__widget-activity-block-title">daily crucible playlist</p>
+                                <p class="feature__widget-activity-block-name">skirmish</p>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--raid">
+                                <p class="feature__widget-activity-block-title">vault of glass</p>
+                                <div class="feature__widget-activity-raid-progress">
+                                    <span class="feature__widget-activity-raid-lvl">level 26</span>
+                                    <ul class="feature__widget-activity-raid-progressbar">
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                    </ul>
+                                </div>
+                                <div class="feature__widget-activity-raid-progress">
+                                    <span class="feature__widget-activity-raid-lvl">level 30</span>
+                                    <ul class="feature__widget-activity-raid-progressbar">
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--raid">
+                                <p class="feature__widget-activity-block-title">crota's end</p>
+                                <div class="feature__widget-activity-raid-progress">
+                                    <span class="feature__widget-activity-raid-lvl">level 30</span>
+                                    <ul class="feature__widget-activity-raid-progressbar">
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                    </ul>
+                                </div>
+                                <div class="feature__widget-activity-raid-progress">
+                                    <span class="feature__widget-activity-raid-lvl">level 33</span>
+                                    <ul class="feature__widget-activity-raid-progressbar">
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="feature__widget-activity-title">prison of elders</p>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--forever-eater">
+                                <p class="feature__widget-activity-block-title">the forever eater</p>
+                                <p class="feature__widget-activity-block-name">level 32</p>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--machine-wrath feature__widget-activity--done">
+                                <p class="feature__widget-activity-block-title">machine wrath</p>
+                                <p class="feature__widget-activity-block-name">level 34</p>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--skolas">
+                                <p class="feature__widget-activity-block-title">skolas's revenge</p>
+                                <p class="feature__widget-activity-block-name">level 35</p>
+                                <ul class="feature__widget-activity-block-modifier-list">
+                                    <li class="feature__widget-activity-block-modifier-item">skolas > catapult</li>
+                                    <li class="feature__widget-activity-block-modifier-item">angry</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="feature__widget-activity-raid-progress">
-                            <span class="feature__widget-activity-raid-lvl">level 30</span>
-                            <ul class="feature__widget-activity-raid-progressbar">
-                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
-                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
-                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
-                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
-                            </ul>
+                        <div class="feature__widget-char-list-item">
+                            <div class="feature__widget-char">
+                                <div class="feature__widget-char-info clearfix">
+                                    <img class="feature__widget-char-img fll" src="img/icons/skolas_revenge_icon.png" alt="" />
+                                    <div class="fll">
+                                        <p class="feature__widget-char-class" data-lvl="30">Hunter</p>
+                                        <p class="feature__widget-char-race">human female</p>
+                                    </div>
+                                </div>
+                                <!--<ul class="feature__widget-char-select">-->
+                                    <!--<li class="feature__widget-char-select-item feature__widget-char-select-item--active"></li><li class="feature__widget-char-select-item"></li><li class="feature__widget-char-select-item"></li>-->
+                                <!--</ul>-->
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--nightfall feature__widget-activity--done">
+                                <p class="feature__widget-activity-block-title">weekly nightfall strike</p>
+                                <p class="feature__widget-activity-block-name">Название страйка</p>
+                                <ul class="feature__widget-activity-block-modifier-list">
+                                    <li class="feature__widget-activity-block-modifier-item">epic</li>
+                                    <li class="feature__widget-activity-block-modifier-item">angry</li>
+                                    <li class="feature__widget-activity-block-modifier-item">lightswitch</li>
+                                    <li class="feature__widget-activity-block-modifier-item">brawler</li>
+                                    <li class="feature__widget-activity-block-modifier-item">nightfall</li>
+                                </ul>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--heroic-strike feature__widget-activity--done">
+                                <p class="feature__widget-activity-block-title">weekly heroic strike</p>
+                                <p class="feature__widget-activity-block-name">Название страйка</p>
+                                <ul class="feature__widget-activity-block-modifier-list">
+                                    <li class="feature__widget-activity-block-modifier-item">heroic</li>
+                                    <li class="feature__widget-activity-block-modifier-item">specialist</li>
+                                </ul>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--daily-story feature__widget-activity--done">
+                                <p class="feature__widget-activity-block-title">daily story mission</p>
+                                <p class="feature__widget-activity-block-name">wolves' gambit</p>
+                                <ul class="feature__widget-activity-block-modifier-list">
+                                    <li class="feature__widget-activity-block-modifier-item">heroic</li>
+                                    <li class="feature__widget-activity-block-modifier-item">specialist</li>
+                                </ul>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--daily-crusible feature__widget-activity--done">
+                                <p class="feature__widget-activity-block-title">daily crucible playlist</p>
+                                <p class="feature__widget-activity-block-name">skirmish</p>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--raid">
+                                <p class="feature__widget-activity-block-title">vault of glass</p>
+                                <div class="feature__widget-activity-raid-progress">
+                                    <span class="feature__widget-activity-raid-lvl">level 26</span>
+                                    <ul class="feature__widget-activity-raid-progressbar">
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                    </ul>
+                                </div>
+                                <div class="feature__widget-activity-raid-progress">
+                                    <span class="feature__widget-activity-raid-lvl">level 30</span>
+                                    <ul class="feature__widget-activity-raid-progressbar">
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--raid">
+                                <p class="feature__widget-activity-block-title">crota's end</p>
+                                <div class="feature__widget-activity-raid-progress">
+                                    <span class="feature__widget-activity-raid-lvl">level 30</span>
+                                    <ul class="feature__widget-activity-raid-progressbar">
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                    </ul>
+                                </div>
+                                <div class="feature__widget-activity-raid-progress">
+                                    <span class="feature__widget-activity-raid-lvl">level 33</span>
+                                    <ul class="feature__widget-activity-raid-progressbar">
+                                        <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                        <li class="feature__widget-activity-raid-progressbar-item"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="feature__widget-activity-title">prison of elders</p>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--forever-eater">
+                                <p class="feature__widget-activity-block-title">the forever eater</p>
+                                <p class="feature__widget-activity-block-name">level 32</p>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--machine-wrath feature__widget-activity--done">
+                                <p class="feature__widget-activity-block-title">machine wrath</p>
+                                <p class="feature__widget-activity-block-name">level 34</p>
+                            </div>
+                            <div class="feature__widget-activity-block feature__widget-activity-block--skolas">
+                                <p class="feature__widget-activity-block-title">skolas's revenge</p>
+                                <p class="feature__widget-activity-block-name">level 35</p>
+                                <ul class="feature__widget-activity-block-modifier-list">
+                                    <li class="feature__widget-activity-block-modifier-item">skolas > catapult</li>
+                                    <li class="feature__widget-activity-block-modifier-item">angry</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="feature__widget-activity-block feature__widget-activity-block--raid">
-                        <p class="feature__widget-activity-block-title">crota's end</p>
-                        <div class="feature__widget-activity-raid-progress">
-                            <span class="feature__widget-activity-raid-lvl">level 30</span>
-                            <ul class="feature__widget-activity-raid-progressbar">
-                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
-                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
-                                <li class="feature__widget-activity-raid-progressbar-item"></li>
-                                <li class="feature__widget-activity-raid-progressbar-item"></li>
-                            </ul>
-                        </div>
-                        <div class="feature__widget-activity-raid-progress">
-                            <span class="feature__widget-activity-raid-lvl">level 33</span>
-                            <ul class="feature__widget-activity-raid-progressbar">
-                                <li class="feature__widget-activity-raid-progressbar-item feature__widget-activity-raid-progressbar-item--active"></li>
-                                <li class="feature__widget-activity-raid-progressbar-item"></li>
-                                <li class="feature__widget-activity-raid-progressbar-item"></li>
-                                <li class="feature__widget-activity-raid-progressbar-item"></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <p class="feature__widget-activity-title">prison of elders</p>
-                    <div class="feature__widget-activity-block feature__widget-activity-block--forever-eater">
-                        <p class="feature__widget-activity-block-title">the forever eater</p>
-                        <p class="feature__widget-activity-block-name">level 32</p>
-                    </div>
-                    <div class="feature__widget-activity-block feature__widget-activity-block--machine-wrath feature__widget-activity--done">
-                        <p class="feature__widget-activity-block-title">machine wrath</p>
-                        <p class="feature__widget-activity-block-name">level 34</p>
-                    </div>
-                    <div class="feature__widget-activity-block feature__widget-activity-block--skolas">
-                        <p class="feature__widget-activity-block-title">skolas's revenge</p>
-                        <p class="feature__widget-activity-block-name">level 35</p>
-                        <ul class="feature__widget-activity-block-modifier-list">
-                            <li class="feature__widget-activity-block-modifier-item">skolas > catapult</li>
-                            <li class="feature__widget-activity-block-modifier-item">angry</li>
-                        </ul>
                     </div>
                     <a class="feature__widget-link-button" href="#">advisors</a>
                 </div>
@@ -346,18 +561,21 @@
             <ul class="timeline clearfix">
                 <li class="timeline__item" data-date="21">
                     <div class="timeline__item-img" style="background-image: url(http://www.cinemablend.com/images/sections/63887/Destiny_63887.jpg)">
-                        <div class="timeline__item-img-meta">
-                            <div class="timeline__item-img-meta-block">
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-url" href="#"><i class="fa fa-link"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-share" href="#"><i class="fa fa-share-alt"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-like" href="#"><i class="fa fa-heart"></i></a>
-                            </div>
-                        </div>
+                        <a href="#" class="timeline__item-img-link"></a>
+                        <!--<div class="timeline__item-img-meta">-->
+                            <!--<div class="timeline__item-img-meta-block">-->
+                                <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-url" href="#"><i class="fa fa-link"></i></a>-->
+                                <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-share" href="#"><i class="fa fa-share-alt"></i></a>-->
+                                <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-like" href="#"><i class="fa fa-heart"></i></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
                     </div>
                     <div class="timeline__item-content">
-                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
-                        <h3 class="timeline__item-title">The Art of War</h3>
-                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <a class="link-black" href="#">
+                            <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                            <h3 class="timeline__item-title">The Art of War</h3>
+                            <p class="timeline__item-author">.Игорь белкин</p>
+                        </a>
                         <div class="timeline__item-meta clearfix">
                             <ul class="timeline__item-taglist meta-tag-list fll">
                                 <li class="timeline__item-tag-item">
@@ -372,18 +590,14 @@
                 </li>
                 <li class="timeline__item" data-date="17">
                     <div class="timeline__item-img" style="background-image: url(http://blogs-images.forbes.com/insertcoin/files/2014/09/destiny-50.jpg)">
-                        <div class="timeline__item-img-meta">
-                            <div class="timeline__item-img-meta-block">
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-url" href="#"><i class="fa fa-link"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-share" href="#"><i class="fa fa-share-alt"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-like" href="#"><i class="fa fa-heart"></i></a>
-                            </div>
-                        </div>
+                        <a href="#" class="timeline__item-img-link"></a>
                     </div>
                     <div class="timeline__item-content">
-                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
-                        <h3 class="timeline__item-title">Bungie Weekly Update</h3>
-                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <a class="link-black" href="#">
+                            <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                            <h3 class="timeline__item-title">Bungie Weekly Update</h3>
+                            <p class="timeline__item-author">.Игорь белкин</p>
+                        </a>
                         <div class="timeline__item-meta clearfix">
                             <ul class="timeline__item-taglist meta-tag-list fll">
                                 <li class="timeline__item-tag-item">
@@ -398,18 +612,14 @@
                 </li>
                 <li class="timeline__item" data-date="16">
                     <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)">
-                        <div class="timeline__item-img-meta">
-                            <div class="timeline__item-img-meta-block">
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-url" href="#"><i class="fa fa-link"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-share" href="#"><i class="fa fa-share-alt"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-like" href="#"><i class="fa fa-heart"></i></a>
-                            </div>
-                        </div>
+                        <a href="#" class="timeline__item-img-link"></a>
                     </div>
                     <div class="timeline__item-content">
-                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
-                        <h3 class="timeline__item-title">Bungie показала новый набор экзотического оружия на ComicCon2018</h3>
-                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <a class="link-black" href="#">
+                            <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                            <h3 class="timeline__item-title">Bungie показала новый набор экзотического оружия на ComicCon2018</h3>
+                            <p class="timeline__item-author">.Игорь белкин</p>
+                        </a>
                         <div class="timeline__item-meta clearfix">
                             <ul class="timeline__item-taglist meta-tag-list fll">
                                 <li class="timeline__item-tag-item">
@@ -424,18 +634,14 @@
                 </li>
                 <li class="timeline__item" data-date="12">
                     <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)">
-                        <div class="timeline__item-img-meta">
-                            <div class="timeline__item-img-meta-block">
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-url" href="#"><i class="fa fa-link"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-share" href="#"><i class="fa fa-share-alt"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-like" href="#"><i class="fa fa-heart"></i></a>
-                            </div>
-                        </div>
+                        <a href="#" class="timeline__item-img-link"></a>
                     </div>
                     <div class="timeline__item-content">
-                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
-                        <h3 class="timeline__item-title">Bungie Day</h3>
-                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <a class="link-black" href="#">
+                            <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                            <h3 class="timeline__item-title">Bungie показала новый набор экзотического оружия на ComicCon2018</h3>
+                            <p class="timeline__item-author">.Игорь белкин</p>
+                        </a>
                         <div class="timeline__item-meta clearfix">
                             <ul class="timeline__item-taglist meta-tag-list fll">
                                 <li class="timeline__item-tag-item">
@@ -449,19 +655,22 @@
                     </div>
                 </li>
                 <li class="timeline__item" data-date="9">
-                    <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)">
-                        <div class="timeline__item-img-meta">
-                            <div class="timeline__item-img-meta-block">
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-url" href="#"><i class="fa fa-link"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-share" href="#"><i class="fa fa-share-alt"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-like" href="#"><i class="fa fa-heart"></i></a>
-                            </div>
-                        </div>
+                    <div class="timeline__item-img" style="background-image: url(http://www.cinemablend.com/images/sections/63887/Destiny_63887.jpg)">
+                        <a href="#" class="timeline__item-img-link"></a>
+                        <!--<div class="timeline__item-img-meta">-->
+                        <!--<div class="timeline__item-img-meta-block">-->
+                        <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-url" href="#"><i class="fa fa-link"></i></a>-->
+                        <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-share" href="#"><i class="fa fa-share-alt"></i></a>-->
+                        <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-like" href="#"><i class="fa fa-heart"></i></a>-->
+                        <!--</div>-->
+                        <!--</div>-->
                     </div>
                     <div class="timeline__item-content">
-                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
-                        <h3 class="timeline__item-title">Destiny Weapon<br>Tuning 2.0</h3>
-                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <a class="link-black" href="#">
+                            <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                            <h3 class="timeline__item-title">The Art of War</h3>
+                            <p class="timeline__item-author">.Игорь белкин</p>
+                        </a>
                         <div class="timeline__item-meta clearfix">
                             <ul class="timeline__item-taglist meta-tag-list fll">
                                 <li class="timeline__item-tag-item">
@@ -475,19 +684,15 @@
                     </div>
                 </li>
                 <li class="timeline__item" data-date="7">
-                    <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)">
-                        <div class="timeline__item-img-meta">
-                            <div class="timeline__item-img-meta-block">
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-url" href="#"><i class="fa fa-link"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-share" href="#"><i class="fa fa-share-alt"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-like" href="#"><i class="fa fa-heart"></i></a>
-                            </div>
-                        </div>
+                    <div class="timeline__item-img" style="background-image: url(http://blogs-images.forbes.com/insertcoin/files/2014/09/destiny-50.jpg)">
+                        <a href="#" class="timeline__item-img-link"></a>
                     </div>
                     <div class="timeline__item-content">
-                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
-                        <h3 class="timeline__item-title">Destiny Hot Fix</h3>
-                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <a class="link-black" href="#">
+                            <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                            <h3 class="timeline__item-title">Bungie Weekly Update</h3>
+                            <p class="timeline__item-author">.Игорь белкин</p>
+                        </a>
                         <div class="timeline__item-meta clearfix">
                             <ul class="timeline__item-taglist meta-tag-list fll">
                                 <li class="timeline__item-tag-item">
@@ -502,18 +707,14 @@
                 </li>
                 <li class="timeline__item" data-date="5">
                     <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)">
-                        <div class="timeline__item-img-meta">
-                            <div class="timeline__item-img-meta-block">
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-url" href="#"><i class="fa fa-link"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-share" href="#"><i class="fa fa-share-alt"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-like" href="#"><i class="fa fa-heart"></i></a>
-                            </div>
-                        </div>
+                        <a href="#" class="timeline__item-img-link"></a>
                     </div>
                     <div class="timeline__item-content">
-                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
-                        <h3 class="timeline__item-title">Bungie Day</h3>
-                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <a class="link-black" href="#">
+                            <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                            <h3 class="timeline__item-title">Bungie показала новый набор экзотического оружия на ComicCon2018</h3>
+                            <p class="timeline__item-author">.Игорь белкин</p>
+                        </a>
                         <div class="timeline__item-meta clearfix">
                             <ul class="timeline__item-taglist meta-tag-list fll">
                                 <li class="timeline__item-tag-item">
@@ -528,18 +729,14 @@
                 </li>
                 <li class="timeline__item" data-date="4">
                     <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)">
-                        <div class="timeline__item-img-meta">
-                            <div class="timeline__item-img-meta-block">
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-url" href="#"><i class="fa fa-link"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-share" href="#"><i class="fa fa-share-alt"></i></a>
-                                <a class="timeline__item-img-meta-item timeline__item-img-meta-like" href="#"><i class="fa fa-heart"></i></a>
-                            </div>
-                        </div>
+                        <a href="#" class="timeline__item-img-link"></a>
                     </div>
                     <div class="timeline__item-content">
-                        <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
-                        <h3 class="timeline__item-title">Destiny Weapon<br>Tuning 2.0</h3>
-                        <p class="timeline__item-author">.Игорь белкин</p>
+                        <a class="link-black" href="#">
+                            <p class="timeline__item-timestamp">10:45, 30/12/2015</p>
+                            <h3 class="timeline__item-title">Bungie показала новый набор экзотического оружия на ComicCon2018</h3>
+                            <p class="timeline__item-author">.Игорь белкин</p>
+                        </a>
                         <div class="timeline__item-meta clearfix">
                             <ul class="timeline__item-taglist meta-tag-list fll">
                                 <li class="timeline__item-tag-item">
