@@ -1,0 +1,51 @@
+.sidebar-item {
+  margin-bottom: 20px;
+}
+.sidebar__pop-post {
+  background-color: #393939;
+  padding: 35px 20px 30px;
+}
+
+.sidebar__pop-post-title {
+  font-family: bebas;
+  font-weight: 300;
+  font-size: 20px;
+  color: $white;
+  letter-spacing: .075em;
+}
+
+.sidebar__pop-post-list {
+  margin-top: 25px;
+}
+
+.sidebar__pop-post-item {
+  position: relative;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.sidebar__pop-post-item-img {
+  float: left;
+  margin-right: 15px;
+}
+
+.sidebar__pop-post-item-title {
+  width: 190px;
+  color: $white;
+  float: left;
+}
+
+.sidebar-ad {
+  padding: 20px 30px 0;
+}

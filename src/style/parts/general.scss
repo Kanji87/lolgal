@@ -488,17 +488,129 @@ body {
   }
 }
 
+.content-wrapper {
+  padding-top: 60px;
+}
+
 .content {
   width: 960px;
   float: left;
   margin-right: 20px;
 }
 
-.aside {
+.sidebar {
   width: 300px;
   float: left;
 }
 
+.paginator-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+.paginator {
+  display: inline-block;
+
+  a {
+    font-family: bebas;
+    font-weight: 300;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
+.paginator__list {
+  display: inline-block;
+}
+
+.paginator__list-item {
+  display: inline-block;
+
+  a {
+    color: #3f3f44;
+
+    &:hover {
+      background-color: #393939;
+      color: $white;
+    }
+  }
+}
+
+.paginator__list-item-active {
+  a {
+    background-color: #393939;
+    color: $white;
+  }
+}
+
+.paginatore__prev,
+.paginatore__next {
+  background-color: #393939;
+  color: $white;
+  font-family: bebas;
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.paginatore__prev {
+  margin-right: 200px;
+  float: left;
+}
+
+.paginatore__next {
+  margin-left: 200px;
+  float: right;
+}
+
+.content-pager {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.content-pager__item {
+  font-family: bebas;
+  font-size: $size-4;
+  line-height: 1;
+  position: relative;
+
+  &:before,
+  &:after {
+    font-family: FontAwesome;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.content-pager__prev {
+  padding-left: 25px;
+
+  &:before {
+    content: '\f060';
+    left: 0;
+  }
+}
+
+.content-pager__next {
+  padding-right: 25px;
+
+  &:after {
+    content: '\f061';
+    right: 0;
+  }
+}
 
 @include respond-to(large) {
   html, body {

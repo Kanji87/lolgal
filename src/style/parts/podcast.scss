@@ -1,6 +1,7 @@
 .podcast-item {
   margin-bottom: 20px;
   background-color: $white;
+  padding: 40px 60px 25px;
 }
 
 .podcast-teaser-item {
@@ -187,4 +188,38 @@
   font-weight: normal;
   line-height: 1;
   margin-bottom: 15px;
+}
+
+.podcast-item__title {
+  font-family: bebas;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.podcast-item__timestamp {
+  font-family: bebas;
+  font-size: $size-5;
+  margin-bottom: 20px;
+}
+
+.podcast-item__lead {
+  margin-bottom: 30px;
+
+  &:before {
+    content: '\f105';
+    font-family: FontAwesome;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+}
+
+.podcast-item__share {
+  font-size: $size-5;
+  margin-right: 20px;
+
+  &:before {
+    top: 0;
+    left: 0;
+    font-size: 14px;
+  }
 }
