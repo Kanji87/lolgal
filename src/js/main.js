@@ -9,6 +9,7 @@
 //= parts/moment.min.js
 //= parts/jquery.plugin.min.js
 //= parts/jquery.countdown.min.js
+//= parts/social-likes.min.js
 
 /*
  *   Custom
