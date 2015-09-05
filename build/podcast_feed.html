@@ -211,7 +211,7 @@
             }
         });
 
-        $('.mejs-play').on('click', function(){
+        $('.podcast-teaser-item__player .mejs-play').on('click', function(){
             var playButton = $(this).closest('.podcast-teaser-item__player').find('.podcast-teaser-item__player-play-button');
             if( playButton.hasClass('podcast-teaser-item__player--active') ){
                 playButton.removeClass('podcast-teaser-item__player--active');
@@ -219,6 +219,10 @@
             else {
                 playButton.addClass('podcast-teaser-item__player--active');
             }
+        });
+
+        $('.podcast-item__player .mejs-play').on('click', function(){
+            $('.podcast-teaser-item__player-play-button').removeClass('podcast-teaser-item__player--active');
         });
     })
 </script>
