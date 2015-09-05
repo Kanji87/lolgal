@@ -11,6 +11,9 @@
                 </div>
                 <div class="podcast-teaser-item__player-img"><img src="img/thrash/podcast_teaser.jpg" alt="" /></div>
                 <a class="podcast-teaser-item__player-play-button" href="#"></a>
+                <div class="podcast-teaser-item__player-container">
+                    <audio id="latest-podcast" src="http://360.polymus.ru/lolgal/build/drink.mp3"></audio>
+                </div>
             </div>
             <div class="podcast-teaser-item__content">
                 <div class="podcast-teaser-item__desc clearfix">
@@ -59,27 +62,42 @@
             <p class="podcast-item__title">12 выпуск подкаста</p>
             <p class="podcast-item__timestamp">10:45 30/12/2015</p>
             <p class="podcast-item__lead">Цены и предзаказ на аддон в России, Destiny 2 на PC и будущее серии, Много новых подробностей, The Taken King, Наши Гардиан на Gamescom, Рубрика «Сельское Верование», Традиционный «Экзотик Недели».</p>
-            <div class="clearfix">
-                <a class="podcast-item__share meta-share link-black" href="#">поделиться</a>
-                <a class="podcast-item__meta-comments meta-comments link-black" href="#">235</a>
+            <div class="podcast-item__player clearfix">
+                <div class="podcast-item__player-container">
+                    <audio id="latest-podcast" src="http://360.polymus.ru/lolgal/build/hangover.mp3"></audio>
+                </div>
+                <div class="podcast-item__player-meta">
+                    <a class="podcast-item__share meta-share link-black" href="#">поделиться</a>
+                    <a class="podcast-item__meta-comments meta-comments link-black" href="#">235</a>
+                </div>
             </div>
         </div>
         <div class="podcast-item">
             <p class="podcast-item__title">11 выпуск подкаста</p>
             <p class="podcast-item__timestamp">10:45 30/12/2015</p>
             <p class="podcast-item__lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eius modi necessitatibus nemo, nisi odio omnis tenetur. Architecto, blanditiis consequatur cum esse in ipsam laboriosam minus nemo nihil odio quod sunt? Adipisci, atque consequatur consequuntur cumque fugiat illum maiores nam nesciunt nostrum perspiciatis quo quod repudiandae totam, velit veniam!</p>
-            <div class="clearfix">
-                <a class="podcast-item__share meta-share link-black" href="#">поделиться</a>
-                <a class="podcast-item__meta-comments meta-comments link-black" href="#">235</a>
+            <div class="podcast-item__player clearfix">
+                <div class="podcast-item__player-container">
+                    <audio id="latest-podcast" src="http://360.polymus.ru/lolgal/build/over_the_seas.mp3"></audio>
+                </div>
+                <div class="podcast-item__player-meta">
+                    <a class="podcast-item__share meta-share link-black" href="#">поделиться</a>
+                    <a class="podcast-item__meta-comments meta-comments link-black" href="#">235</a>
+                </div>
             </div>
         </div>
         <div class="podcast-item">
             <p class="podcast-item__title">10 выпуск подкаста</p>
             <p class="podcast-item__timestamp">10:45 30/12/2015</p>
             <p class="podcast-item__lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aperiam eligendi labore maxime tenetur veritatis voluptate voluptates! Animi autem commodi dicta distinctio dolore ducimus ex explicabo facere fuga id laboriosam laborum molestiae molestias necessitatibus neque, nesciunt odit officia optio porro, quasi velit veniam vitae. Blanditiis culpa debitis deleniti dignissimos enim et exercitationem fugiat, harum impedit in iste iusto, magnam magni modi placeat, porro quaerat quasi qui quo quod reiciendis saepe voluptas. At distinctio natus optio qui quidem suscipit voluptates! Amet commodi corporis, deserunt dolores eius facere fugiat laboriosam maiores, maxime odit officiis quos unde voluptatibus? Accusantium quaerat quas repudiandae?</p>
-            <div class="clearfix">
-                <a class="podcast-item__share meta-share link-black" href="#">поделиться</a>
-                <a class="podcast-item__meta-comments meta-comments link-black" href="#">235</a>
+            <div class="podcast-item__player clearfix">
+                <div class="podcast-item__player-container">
+                    <audio id="latest-podcast" src="http://360.polymus.ru/lolgal/build/wooden_leg.mp3"></audio>
+                </div>
+                <div class="podcast-item__player-meta">
+                    <a class="podcast-item__share meta-share link-black" href="#">поделиться</a>
+                    <a class="podcast-item__meta-comments meta-comments link-black" href="#">235</a>
+                </div>
             </div>
         </div>
         <div class="paginator-wrapper">
@@ -96,5 +114,34 @@
     </section>
     //= templates/content_sidebar.html
 </div>
+
+<script>
+    $(function(){
+        $('audio').mediaelementplayer({
+            audioWidth: '100%',
+            audioHeight: 24
+        });
+
+        $('.podcast-teaser-item__player-play-button').on('click', function(e){
+            e.preventDefault();
+            if( $(this).hasClass('podcast-teaser-item__player--active') ){
+                $(this).parent().find('.mejs-pause').trigger('click');
+            }
+            else {
+                $(this).parent().find('.mejs-play').trigger('click');
+            }
+        });
+
+        $('.mejs-play').on('click', function(){
+            var playButton = $(this).closest('.podcast-teaser-item__player').find('.podcast-teaser-item__player-play-button');
+            if( playButton.hasClass('podcast-teaser-item__player--active') ){
+                playButton.removeClass('podcast-teaser-item__player--active');
+            }
+            else {
+                playButton.addClass('podcast-teaser-item__player--active');
+            }
+        });
+    })
+</script>
 
 //= templates/footer.html

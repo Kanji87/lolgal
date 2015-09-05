@@ -191,6 +191,7 @@ body {
 .wrapper {
   width: 1280px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .full-block-link {
@@ -511,6 +512,7 @@ body {
   width: 100%;
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 55px;
   box-sizing: border-box;
 }
 

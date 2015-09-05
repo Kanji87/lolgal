@@ -11,6 +11,9 @@
                 </div>
                 <div class="podcast-teaser-item__player-img"><img src="img/thrash/podcast_teaser.jpg" alt="" /></div>
                 <a class="podcast-teaser-item__player-play-button" href="#"></a>
+                <div class="podcast-teaser-item__player-container">
+                    <audio id="latest-podcast" src="http://360.polymus.ru/lolgal/build/drink.mp3"></audio>
+                </div>
             </div>
             <div class="podcast-teaser-item__content">
                 <div class="podcast-teaser-item__desc clearfix">
@@ -60,5 +63,34 @@
     </section>
     //= templates/content_sidebar.html
 </div>
+
+<script>
+    $(function(){
+        $('audio').mediaelementplayer({
+            audioWidth: '100%',
+            audioHeight: 24
+        });
+
+        $('.podcast-teaser-item__player-play-button').on('click', function(e){
+            e.preventDefault();
+            if( $(this).hasClass('podcast-teaser-item__player--active') ){
+                $(this).parent().find('.mejs-pause').trigger('click');
+            }
+            else {
+                $(this).parent().find('.mejs-play').trigger('click');
+            }
+        });
+
+        $('.mejs-play').on('click', function(){
+            var playButton = $(this).closest('.podcast-teaser-item__player').find('.podcast-teaser-item__player-play-button');
+            if( playButton.hasClass('podcast-teaser-item__player--active') ){
+                playButton.removeClass('podcast-teaser-item__player--active');
+            }
+            else {
+                playButton.addClass('podcast-teaser-item__player--active');
+            }
+        });
+    })
+</script>
 
 //= templates/footer.html

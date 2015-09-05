@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mediaelementplayer.min.css"/>
     <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css" />-->
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/main.js"></script>
@@ -46,6 +47,9 @@
                 </div>
                 <div class="podcast-teaser-item__player-img"><img src="img/thrash/podcast_teaser.jpg" alt="" /></div>
                 <a class="podcast-teaser-item__player-play-button" href="#"></a>
+                <div class="podcast-teaser-item__player-container">
+                    <audio id="latest-podcast" src="http://360.polymus.ru/lolgal/build/drink.mp3"></audio>
+                </div>
             </div>
             <div class="podcast-teaser-item__content">
                 <div class="podcast-teaser-item__desc clearfix">
@@ -94,27 +98,42 @@
             <p class="podcast-item__title">12 выпуск подкаста</p>
             <p class="podcast-item__timestamp">10:45 30/12/2015</p>
             <p class="podcast-item__lead">Цены и предзаказ на аддон в России, Destiny 2 на PC и будущее серии, Много новых подробностей, The Taken King, Наши Гардиан на Gamescom, Рубрика «Сельское Верование», Традиционный «Экзотик Недели».</p>
-            <div class="clearfix">
-                <a class="podcast-item__share meta-share link-black" href="#">поделиться</a>
-                <a class="podcast-item__meta-comments meta-comments link-black" href="#">235</a>
+            <div class="podcast-item__player clearfix">
+                <div class="podcast-item__player-container">
+                    <audio id="latest-podcast" src="http://360.polymus.ru/lolgal/build/hangover.mp3"></audio>
+                </div>
+                <div class="podcast-item__player-meta">
+                    <a class="podcast-item__share meta-share link-black" href="#">поделиться</a>
+                    <a class="podcast-item__meta-comments meta-comments link-black" href="#">235</a>
+                </div>
             </div>
         </div>
         <div class="podcast-item">
             <p class="podcast-item__title">11 выпуск подкаста</p>
             <p class="podcast-item__timestamp">10:45 30/12/2015</p>
             <p class="podcast-item__lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eius modi necessitatibus nemo, nisi odio omnis tenetur. Architecto, blanditiis consequatur cum esse in ipsam laboriosam minus nemo nihil odio quod sunt? Adipisci, atque consequatur consequuntur cumque fugiat illum maiores nam nesciunt nostrum perspiciatis quo quod repudiandae totam, velit veniam!</p>
-            <div class="clearfix">
-                <a class="podcast-item__share meta-share link-black" href="#">поделиться</a>
-                <a class="podcast-item__meta-comments meta-comments link-black" href="#">235</a>
+            <div class="podcast-item__player clearfix">
+                <div class="podcast-item__player-container">
+                    <audio id="latest-podcast" src="http://360.polymus.ru/lolgal/build/over_the_seas.mp3"></audio>
+                </div>
+                <div class="podcast-item__player-meta">
+                    <a class="podcast-item__share meta-share link-black" href="#">поделиться</a>
+                    <a class="podcast-item__meta-comments meta-comments link-black" href="#">235</a>
+                </div>
             </div>
         </div>
         <div class="podcast-item">
             <p class="podcast-item__title">10 выпуск подкаста</p>
             <p class="podcast-item__timestamp">10:45 30/12/2015</p>
             <p class="podcast-item__lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aperiam eligendi labore maxime tenetur veritatis voluptate voluptates! Animi autem commodi dicta distinctio dolore ducimus ex explicabo facere fuga id laboriosam laborum molestiae molestias necessitatibus neque, nesciunt odit officia optio porro, quasi velit veniam vitae. Blanditiis culpa debitis deleniti dignissimos enim et exercitationem fugiat, harum impedit in iste iusto, magnam magni modi placeat, porro quaerat quasi qui quo quod reiciendis saepe voluptas. At distinctio natus optio qui quidem suscipit voluptates! Amet commodi corporis, deserunt dolores eius facere fugiat laboriosam maiores, maxime odit officiis quos unde voluptatibus? Accusantium quaerat quas repudiandae?</p>
-            <div class="clearfix">
-                <a class="podcast-item__share meta-share link-black" href="#">поделиться</a>
-                <a class="podcast-item__meta-comments meta-comments link-black" href="#">235</a>
+            <div class="podcast-item__player clearfix">
+                <div class="podcast-item__player-container">
+                    <audio id="latest-podcast" src="http://360.polymus.ru/lolgal/build/wooden_leg.mp3"></audio>
+                </div>
+                <div class="podcast-item__player-meta">
+                    <a class="podcast-item__share meta-share link-black" href="#">поделиться</a>
+                    <a class="podcast-item__meta-comments meta-comments link-black" href="#">235</a>
+                </div>
             </div>
         </div>
         <div class="paginator-wrapper">
@@ -175,6 +194,136 @@
     </aside>
 </div>
 
-    <footer class="footer wrapper"></footer>
+<script>
+    $(function(){
+        $('audio').mediaelementplayer({
+            audioWidth: '100%',
+            audioHeight: 24
+        });
+
+        $('.podcast-teaser-item__player-play-button').on('click', function(e){
+            e.preventDefault();
+            if( $(this).hasClass('podcast-teaser-item__player--active') ){
+                $(this).parent().find('.mejs-pause').trigger('click');
+            }
+            else {
+                $(this).parent().find('.mejs-play').trigger('click');
+            }
+        });
+
+        $('.mejs-play').on('click', function(){
+            var playButton = $(this).closest('.podcast-teaser-item__player').find('.podcast-teaser-item__player-play-button');
+            if( playButton.hasClass('podcast-teaser-item__player--active') ){
+                playButton.removeClass('podcast-teaser-item__player--active');
+            }
+            else {
+                playButton.addClass('podcast-teaser-item__player--active');
+            }
+        });
+    })
+</script>
+
+    <footer class="footer">
+        <div class="wrapper clearfix">
+            <div class="footer__links clearfix fll">
+                <ul class="footer__links-list">
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Advisors</a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Missions</a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Raids</a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Prison of Elders</a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Weekly PVP</a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Xur</a>
+                    </li>
+                </ul>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Новости</a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">События</a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Анонсы</a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">TTK</a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Weekly Update</a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Xur</a>
+                    </li>
+                </ul>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Подкаст</a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Стримы</a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Гайды</a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Вселенная</a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Weekly PVP</a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-item-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contacts flr">
+                <ul class="footer__social-list clearfix">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-item-link">
+                            <i class="fa fa-vk"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-item-link">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-item-link">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-item-link">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-item-link">
+                            <i class="fa fa-twitch"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-item-link">
+                            <i class="fa fa-apple"></i>
+                        </a>
+                    </li>
+                </ul>
+                <a href="mailto:vulgaris@gjallarhorn.ru" class="footer__mail">vulgaris@gjallarhorn.ru</a>
+                <p class="footer__copyright">&copy; 2015 | Типичный Галлахорн</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

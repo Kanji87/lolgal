@@ -10,6 +10,7 @@
 //= parts/jquery.plugin.min.js
 //= parts/jquery.countdown.min.js
 //= parts/social-likes.min.js
+//= parts/mediaelement-and-player.min.js
 
 /*
  *   Custom
