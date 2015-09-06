@@ -169,6 +169,10 @@ p {
   line-height: 1.2;
 }
 
+input {
+  outline: none;
+}
+
 body {
   font-size: 14px;
   text-rendering: auto;
@@ -403,6 +407,18 @@ body {
     -webkit-box-shadow: 0 4px $button-light-grey-disabled-shadow;
     -moz-box-shadow:  0 4px $button-light-grey-disabled-shadow;
     box-shadow:  0 4px $button-light-grey-disabled-shadow;
+  }
+}
+
+.button-yellow {
+  background-color: $button-yellow;
+
+  &:hover {
+    background-color: $button-yellow-hover;
+  }
+
+  &:active {
+    background-color: $button-yellow-active;
   }
 }
 

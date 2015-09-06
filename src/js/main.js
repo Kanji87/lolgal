@@ -27,19 +27,13 @@ $(function() {
         }
     });
 
-    $('.js-feature-podcast-trigger').on('click', function(e) {
-        e.preventDefault();
-        $(this).closest('.flip-container').toggleClass('flip');
+    $('.header__search-form-input').focusin(function(){
+        $('.header__search').addClass('focused');
+    });
+    $('.header__search-form-input').focusout(function(){
+        $('.header__search').removeClass('focused');
     });
 
-    $('.feature__content-podcast-playlist-item-like').on('click', function(e) {
-        e.preventDefault();
-        $(this).toggleClass('feature__content-podcast-playlist-item-like--active');
-    });
-
-    $('.feature__content-podcast-playlist-item-play').on('click', function(e) {
-        e.preventDefault();
-    });
 
     function getTarget() {
         var today = moment(),

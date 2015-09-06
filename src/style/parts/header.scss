@@ -7,11 +7,11 @@
     background-color: $bg-black;
     padding: 0 20px;
     box-sizing: border-box;
+    position: relative;
   }
 }
 
 .header__block {
-  //  display: table-cell;
   height: 100px;
   line-height: 100px;
   display: inline-block;
@@ -19,17 +19,18 @@
 }
 
 .header__logo {
-  //  width: 40px;
-  //  height: 38px;
-  //  line-height: 1;
   color: $white;
   font-size: $size-1;
   font-weight: bold;
   margin-right: 40px;
 }
 
+.header__menu {
+  line-height: 110px;
+}
+
 .header__menu-item {
-  width: 100px;
+  width: 90px;
   height: 30px;
   color: $white;
   font-size: $size-4;
@@ -69,4 +70,89 @@
   font-size: 24px;
   line-height: 100px;
   float: right;
+}
+
+.header__search {
+  width: 250px;
+  position: absolute;
+  height: 40px;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  right: 0;
+  top: 50%;
+
+  &.focused {
+    .header__search-icon {
+      right: 240px;
+      color: #c4c4c4;
+
+      &:after {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.header__search-form-input {
+  padding: 0 40px;
+  height: 40px;
+  width: 0;
+  -webkit-transition: all ease-in-out .5s;
+  -moz-transition: all ease-in-out .5s;
+  -ms-transition: all ease-in-out .5s;
+  -o-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-family: roboto;
+  font-size: $size-content;
+  color: #c4c4c4;
+  //text-decoration: underline;
+  background: 0;
+  border: 0;
+  outline: none;
+
+  &:focus {
+    width: 210px;
+    cursor: text;
+    padding-left: 50px;
+    padding-right: 15px;
+    background-color: #484848;
+  }
+}
+
+.header__search-icon {
+  position: absolute;
+  font-size: 18px;
+  color: $white;
+  right: 5px;
+  z-index: 999;
+  top: 10px;
+  pointer-events: none;
+  -webkit-transition: all ease-in-out .5s;
+  -moz-transition: all ease-in-out .5s;
+  -ms-transition: all ease-in-out .5s;
+  -o-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
+  
+  &:after {
+    content: 'поиск';
+    font-family: bebas;
+    position: absolute;
+    color: $white;
+    left: -45px;
+    font-size: $size-5;
+    top: 2px;
+    opacity: 1;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+  }
 }
