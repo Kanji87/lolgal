@@ -410,6 +410,41 @@ body {
   }
 }
 
+.button-deep-grey {
+  color: $white;
+  text-shadow: 0 1px #000;
+  background-color: $button-deep-grey;
+  -webkit-box-shadow: 0 4px $button-deep-grey-shadow;
+  -moz-box-shadow:  0 4px $button-deep-grey-shadow;
+  box-shadow:  0 4px $button-deep-grey-shadow;
+
+  &:hover {
+    text-shadow: 0 1px #312c2c;
+    background-color: $button-deep-grey-hover;
+    -webkit-box-shadow: 0 4px $button-deep-grey-hover-shadow;
+    -moz-box-shadow:  0 4px $button-deep-grey-hover-shadow;
+    box-shadow:  0 4px $button-deep-grey-hover-shadow;
+  }
+
+  &:active {
+    color: #c6c6c6;
+    text-shadow: 0 1px #000;
+    background-color: $button-deep-grey-active;
+    -webkit-box-shadow: 0 4px $button-deep-grey-shadow;
+    -moz-box-shadow:  0 4px $button-deep-grey-shadow;
+    box-shadow:  0 4px $button-deep-grey-shadow;
+  }
+
+  &:disabled {
+    color: #a6a4a4;
+    text-shadow: 0 1px #3b3636;
+    background-color: $button-light-grey-disabled;
+    -webkit-box-shadow: 0 4px $button-light-grey-disabled-shadow;
+    -moz-box-shadow:  0 4px $button-light-grey-disabled-shadow;
+    box-shadow:  0 4px $button-light-grey-disabled-shadow;
+  }
+}
+
 .button-yellow {
   background-color: $button-yellow;
 

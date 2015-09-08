@@ -590,7 +590,11 @@
   &:hover {
     .timeline__item-img-link {
       background-color: rgba($bg-green, .6);
-      box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 7px 4px -2px rgba(0, 0, 0, 0.2);
+    }
+    
+    .timeline__item-img {
+      transform: scale(1.05);
     }
   }
 
@@ -660,6 +664,7 @@
   position: relative;
   -webkit-background-size: cover;
   background-size: cover;
+  transition: all ease-in-out .3s;
 }
 
 .timeline__item-content {
@@ -999,4 +1004,8 @@
   font-family: bebas;
   font-size: $size-5;
   text-align: center;
+}
+
+.about__title-logo {
+  width: 120px;
 }
