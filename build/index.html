@@ -60,32 +60,61 @@
             </div>
             <div class="feature__items clearfix">
                 <div class="feature__content fll">
-                    <div class="feature__slider fotorama"
+                    <div class="feature__slider-nav-button-list clearfix">
+                        <div class="feature__slider-nav-button-item feature__slider-nav-button-item--active js-fotorama-show-slide">
+                            <p class="feature__slider-nav-button-item-title">35 знаков мач Игорь вери микроанонс</p>
+                        </div>
+                        <div class="feature__slider-nav-button-item js-fotorama-show-slide">
+                            <p class="feature__slider-nav-button-item-title">bungie restream</p>
+                        </div>
+                        <div class="feature__slider-nav-button-item js-fotorama-show-slide">
+                            <p class="feature__slider-nav-button-item-title">destiny TTK</p>
+                        </div>
+                    </div>
+                    <div id="fotorama" class="feature__slider fotorama"
                         data-width="100%"
                         data-ratio="960/290"
                         data-arrows="false"
                         data-click="false"
                         data-autoplay="4000"
                         data-transitionduration="800"
+                        data-navposition="top"
                         data-loop="true"
                         data-swipe="true">
                         <div class="feature__slider-item">
                             <div class="feature__slider-text-block">
-                                <p class="feature__slider-title">.12<br />выпуск<br />подкаста</p>
-                                <p class="feature__slider-desc">про destiny от Типичного галлахорна</p>
+                                <p class="feature__slider-title">.12 выпуск подкаста</p>
+                                <p class="feature__slider-subtitle">про destiny от Типичного галлахорна</p>
+                                <div class="feature__slider-desc clearfix">
+                                    <ul class="podcast-teaser-item__link-list">
+                                        <li class="podcast-teaser-item__link-list-item"><a class="podcast-teaser-item__link-list-item-youtube link-white" href="#">youtube</a></li>
+                                        <li class="podcast-teaser-item__link-list-item"><a class="podcast-teaser-item__link-list-item-podster link-white" href="#">podster</a></li>
+                                        <li class="podcast-teaser-item__link-list-item"><a class="podcast-teaser-item__link-list-item-vk link-white" href="#">вконтакте</a></li>
+                                        <li class="podcast-teaser-item__link-list-item"><a class="podcast-teaser-item__link-list-item-itunes link-white" href="#">itunes</a></li>
+                                    </ul>
+                                    <ul class="feature__slider-desc-list">
+                                        <li class="feature__slider-desc-list-item">Цены и предзаказ на аддон в России,</li>
+                                        <li class="feature__slider-desc-list-item">Destiny 2 на PC и будущее серии,</li>
+                                        <li class="feature__slider-desc-list-item">Много новых подробностей,</li>
+                                        <li class="feature__slider-desc-list-item">The Taken King,</li>
+                                        <li class="feature__slider-desc-list-item">Наши Гардиан на Gamescom,</li>
+                                        <li class="feature__slider-desc-list-item">Рубрика «Сельское Верование»,</li>
+                                        <li class="feature__slider-desc-list-item">Традиционный «Экзотик Недели».</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="feature__slider-buttons">
-                                <button class="button button-grey feature__slider-buttons-item">ТГ</button>
-                                <button class="button button-green feature__slider-buttons-item">Podster</button>
-                                <button class="button button-red feature__slider-buttons-item">Youtube</button>
-                                <button class="button button-blue feature__slider-buttons-item">iTunes</button>
-                            </div>
+                            <!--<div class="feature__slider-buttons">-->
+                                <!--<button class="button button-grey feature__slider-buttons-item">ТГ</button>-->
+                                <!--<button class="button button-green feature__slider-buttons-item">Podster</button>-->
+                                <!--<button class="button button-red feature__slider-buttons-item">Youtube</button>-->
+                                <!--<button class="button button-blue feature__slider-buttons-item">iTunes</button>-->
+                            <!--</div>-->
                             <img src="img/thrash/slider1.jpg" alt="12 выпуск подкаста" />
                         </div>
                         <div class="feature__slider-item">
                             <div class="feature__slider-text-block">
                                 <p class="feature__slider-title">вышел the taking king</p>
-                                <p class="feature__slider-desc">и это охуенно</p>
+                                <p class="feature__slider-subtitle">и это охуенно</p>
                             </div>
                             <img src="img/thrash/slider2.jpg" alt="11 выпуск подкаста" />
                         </div>
@@ -559,8 +588,9 @@
             <div class="timeline-line"></div>
             <ul class="timeline clearfix">
                 <li class="timeline__item" data-date="21">
-                    <div class="timeline__item-img" style="background-image: url(http://www.cinemablend.com/images/sections/63887/Destiny_63887.jpg)">
+                    <div class="timeline__item-img">
                         <a href="#" class="timeline__item-img-link"></a>
+                        <img src="http://www.ynet.co.il/PicServer2/04062007/1327281/comics3_m.jpg" alt="" />
                         <!--<div class="timeline__item-img-meta">-->
                             <!--<div class="timeline__item-img-meta-block">-->
                                 <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-url" href="#"><i class="fa fa-link"></i></a>-->
@@ -588,8 +618,9 @@
                     </div>
                 </li>
                 <li class="timeline__item" data-date="17">
-                    <div class="timeline__item-img" style="background-image: url(http://blogs-images.forbes.com/insertcoin/files/2014/09/destiny-50.jpg)">
+                    <div class="timeline__item-img">
                         <a href="#" class="timeline__item-img-link"></a>
+                        <img src="http://blogs-images.forbes.com/insertcoin/files/2014/09/destiny-50.jpg" alt="" />
                     </div>
                     <div class="timeline__item-content">
                         <a class="link-black" href="#">
@@ -610,8 +641,9 @@
                     </div>
                 </li>
                 <li class="timeline__item" data-date="16">
-                    <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)">
+                    <div class="timeline__item-img">
                         <a href="#" class="timeline__item-img-link"></a>
+                        <img src="https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg" alt="" />
                     </div>
                     <div class="timeline__item-content">
                         <a class="link-black" href="#">
@@ -632,8 +664,16 @@
                     </div>
                 </li>
                 <li class="timeline__item" data-date="12">
-                    <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)">
+                    <div class="timeline__item-img">
                         <a href="#" class="timeline__item-img-link"></a>
+                        <img src="http://www.cinemablend.com/images/sections/63887/Destiny_63887.jpg" alt="" />
+                        <!--<div class="timeline__item-img-meta">-->
+                        <!--<div class="timeline__item-img-meta-block">-->
+                        <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-url" href="#"><i class="fa fa-link"></i></a>-->
+                        <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-share" href="#"><i class="fa fa-share-alt"></i></a>-->
+                        <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-like" href="#"><i class="fa fa-heart"></i></a>-->
+                        <!--</div>-->
+                        <!--</div>-->
                     </div>
                     <div class="timeline__item-content">
                         <a class="link-black" href="#">
@@ -654,15 +694,9 @@
                     </div>
                 </li>
                 <li class="timeline__item" data-date="9">
-                    <div class="timeline__item-img" style="background-image: url(http://www.cinemablend.com/images/sections/63887/Destiny_63887.jpg)">
+                    <div class="timeline__item-img">
                         <a href="#" class="timeline__item-img-link"></a>
-                        <!--<div class="timeline__item-img-meta">-->
-                        <!--<div class="timeline__item-img-meta-block">-->
-                        <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-url" href="#"><i class="fa fa-link"></i></a>-->
-                        <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-share" href="#"><i class="fa fa-share-alt"></i></a>-->
-                        <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-like" href="#"><i class="fa fa-heart"></i></a>-->
-                        <!--</div>-->
-                        <!--</div>-->
+                        <img src="http://intrawallpaper.com/wp-content/uploads/destiny-the-warlock-wallpaper-games-photo-destiny-wallpaper-270x170.png" alt="" />
                     </div>
                     <div class="timeline__item-content">
                         <a class="link-black" href="#">
@@ -683,8 +717,9 @@
                     </div>
                 </li>
                 <li class="timeline__item" data-date="7">
-                    <div class="timeline__item-img" style="background-image: url(http://blogs-images.forbes.com/insertcoin/files/2014/09/destiny-50.jpg)">
+                    <div class="timeline__item-img">
                         <a href="#" class="timeline__item-img-link"></a>
+                        <img src="http://blogs-images.forbes.com/insertcoin/files/2014/09/destiny-50.jpg" alt="" />
                     </div>
                     <div class="timeline__item-content">
                         <a class="link-black" href="#">
@@ -705,8 +740,16 @@
                     </div>
                 </li>
                 <li class="timeline__item" data-date="5">
-                    <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)">
+                    <div class="timeline__item-img">
                         <a href="#" class="timeline__item-img-link"></a>
+                        <img src="http://doubleplusgoodgames.com/wp-content/themes/gt3-wp-cleanspace/timthumb/timthumb.php?w=270&h=230&src=http://doubleplusgoodgames.com/wp-content/uploads/2014/05/WatchDogsArt.jpg" alt="" />
+                        <!--<div class="timeline__item-img-meta">-->
+                        <!--<div class="timeline__item-img-meta-block">-->
+                        <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-url" href="#"><i class="fa fa-link"></i></a>-->
+                        <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-share" href="#"><i class="fa fa-share-alt"></i></a>-->
+                        <!--<a class="timeline__item-img-meta-item timeline__item-img-meta-like" href="#"><i class="fa fa-heart"></i></a>-->
+                        <!--</div>-->
+                        <!--</div>-->
                     </div>
                     <div class="timeline__item-content">
                         <a class="link-black" href="#">
@@ -727,8 +770,9 @@
                     </div>
                 </li>
                 <li class="timeline__item" data-date="4">
-                    <div class="timeline__item-img" style="background-image: url(https://gamerhorizon0.files.wordpress.com/2013/02/xl_destiny-artwork-soldier2-62.jpg)">
+                    <div class="timeline__item-img">
                         <a href="#" class="timeline__item-img-link"></a>
+                        <img src="http://doubleplusgoodgames.com/wp-content/themes/gt3-wp-cleanspace/timthumb/timthumb.php?w=270&h=230&src=http://doubleplusgoodgames.com/wp-content/uploads/2014/06/PlayStation-4-623-80.png" alt="" />
                     </div>
                     <div class="timeline__item-content">
                         <a class="link-black" href="#">
@@ -808,8 +852,7 @@
                     <p class="about__desc-title">Мы вас не звали!</p>
                     <p class="about__desc-text">Уже поздно. Вы уже здесь. Заходите, располагайтесь.
                     </p>
-                    <p class="about__desc-title">С неподдельной любовью и обожанием,
-                        ваш тг</p>
+                    <p class="about__desc-title">С неподдельной любовью и обожанием, ваш тг</p>
                 </div>
             </div>
         </div>
@@ -845,13 +888,29 @@
     });
 </script>
 <script>
-//    (function($){
-//        $(window).load(function(){
-//            $('.timeline-content').mCustomScrollbar({
-//                theme: 'light-3'
-//            });
-//        });
-//    })(jQuery);
+    $(function () {
+        // 1. Initialize fotorama manually.
+        var $fotoramaDiv = $('#fotorama').fotorama();
+
+        // 2. Get the API object.
+        var fotorama = $fotoramaDiv.data('fotorama');
+
+        // 3. Inspect it in console.
+        console.log(fotorama);
+
+        $('.js-fotorama-show-slide').on('click', function(){
+            var slideNum = $(this).index();
+            fotorama.show(slideNum);
+            $('.js-fotorama-show-slide').removeClass('feature__slider-nav-button-item--active');
+            $(this).addClass('feature__slider-nav-button-item--active');
+        });
+
+        $('.fotorama').on('fotorama:show', function(e, fotorama, extra){
+            var activeSlide = fotorama.activeIndex;
+            $('.js-fotorama-show-slide').removeClass('feature__slider-nav-button-item--active');
+            $('.js-fotorama-show-slide').eq(activeSlide).addClass('feature__slider-nav-button-item--active');
+        });
+    });
 </script>
 
     <footer class="footer">

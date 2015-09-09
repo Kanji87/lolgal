@@ -73,7 +73,7 @@
 }
 
 .feature__items {
-  height: 880px;
+  height: 940px;
 }
 
 .feature__content {
@@ -137,6 +137,14 @@
   height: 300px;
   width: 100%;
 
+  .podcast-teaser-item__link-list {
+    padding-top: 7px;
+  }
+
+  .podcast-teaser-item__link-list-item-podster:before {
+    background-image: url($imgPath + 'icons/podcast_podster_white.png');
+  }
+
   .fotorama__nav-wrap {
     background-color: $grey-dark;
   }
@@ -154,16 +162,10 @@
 
   .fotorama__nav__frame {
     background-color: $grey-dark;
-    border-right: 2px solid $bg-light-grey;
     width: 33.3%;
-
-    &:last-child {
-      border: 0;
-    }
 
     &.fotorama__active {
       background-color: $button-yellow;
-      border: 0;
     }
   }
 }
@@ -185,22 +187,23 @@
 
 .feature__slider-text-block {
   @include vertical-middle-absolute;
+  width: 430px;
   z-index: 2;
   left: 55px;
 }
 
 .feature__slider-title,
-.feature__slider-desc {
+.feature__slider-subtitle {
   font-family: bebas;
   color: $white;
 }
 
 .feature__slider-title {
-  font-size: $size-big;
+  font-size: 60px;
   line-height: .75;
 }
 
-.feature__slider-desc {
+.feature__slider-subtitle {
   font-size: $size-4;
 }
 
@@ -233,6 +236,8 @@
 
 .feature__content-news-img {
   width: 320px;
+  height: 100%;
+  overflow: hidden;
 }
 
 .feature__content-news-text {
@@ -240,6 +245,7 @@
   box-sizing: border-box;
   padding: 25px 30px 17px;
   line-height: 1;
+  height: 100%;
 }
 
 .feature__content-news-timestamp,
@@ -589,12 +595,11 @@
 
   &:hover {
     .timeline__item-img-link {
-      background-color: rgba($bg-green, .6);
-      box-shadow: 0 7px 4px -2px rgba(0, 0, 0, 0.2);
+      opacity: 1;
     }
     
-    .timeline__item-img {
-      transform: scale(1.05);
+    .timeline__item-img img {
+      transform: scale(1.1) translate(-50%, -50%);
     }
   }
 
@@ -650,26 +655,40 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: transparent;
-  -webkit-transition: all ease-in-out .3s;
-  -moz-transition: all ease-in-out .3s;
-  -ms-transition: all ease-in-out .3s;
-  -o-transition: all ease-in-out .3s;
+  opacity: 0;
+  z-index: 10;
+  background-color: rgba($bg-green, .6);
   transition: all ease-in-out .3s;
 }
 
 .timeline__item-img {
   float: left;
-  width: 43%;
+//  width: 43%;
+  width: 268px;
+  height: 100%;
+  overflow: hidden;
   position: relative;
-  -webkit-background-size: cover;
-  background-size: cover;
-  transition: all ease-in-out .3s;
+  display: inline-block;
+
+  img {
+//    min-height: 100%;
+//    min-width: 100%;
+
+    position:absolute;
+    top:50%;
+    min-height:100%;
+    display:block;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    min-width:100%;
+    transition: all ease-in-out .3s;
+  }
 }
 
 .timeline__item-content {
   float: left;
-  width: 57%;
+//  width: 57%;
+  width: 320px;
   box-sizing: border-box;
   padding: 20px 15px 70px 20px;
 }
@@ -808,7 +827,7 @@
 
 .about__team-list {
   margin-bottom: 20px;
-  font-size: $size-5;
+  font-size: 16px;
   color: $white;
   line-height: 1.2;
 }
@@ -833,7 +852,7 @@
 }
 
 .about__desc-text {
-  font-size: $size-5;
+  font-size: 16px;
   color: $white;
   margin-bottom: 30px;
   line-height: 1;
@@ -1008,4 +1027,66 @@
 
 .about__title-logo {
   width: 120px;
+}
+
+.feature__slider-nav-button-list {
+  height: 50px;
+  background-color: $black;
+}
+
+.feature__slider-nav-button-item {
+  float: left;
+  width: 33.3%;
+  background-color: #f6f6f6;
+  border-right: 1px solid #ebebeb;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:last-child {
+    border: 0;
+  }
+
+  &.feature__slider-nav-button-item--active {
+    background-color: $white;
+
+    .feature__slider-nav-button-item-title {
+      color: $black;
+    }
+  }
+}
+
+.feature__slider-nav-button-item-link {
+  text-decoration: none;
+}
+
+.feature__slider-nav-button-item-title {
+  line-height: 55px;
+  height: 50px;
+  padding: 0 20px;
+  font-size: $size-5;
+  font-family: bebas;
+  color: #747474;
+}
+
+.feature__slider-desc {
+  margin-top: 15px;
+}
+
+.feature__slider-desc-list {
+  float: left;
+  color: $white;
+  margin-left: 20px;
+  padding-left: 10px;
+  border-left: 1px solid $white;
+}
+
+.feature__slider-desc-list-item {
+  line-height: 1;
+
+  &:before {
+    content: '\f105';
+    font-family: FontAwesome;
+    font-size: 14px;
+    margin-right: 5px;
+  }
 }
